@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="Complice &mdash; focus on what's important" />
+    <meta property="og:description" content="Make more progress on your goals." />
+    <meta property="og:image" content="https://complice.co/img/product-overview-2.png" />
+    <meta property="og:logo" content="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+
+    <meta name='theme-color' content="#9600FF">
+    <link rel="manifest" href="/manifest.json">
+    <meta name='mobile-web-app-capable' content="yes">
+    <meta name='apple-mobile-web-app-capable' content="yes">
+    <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/sweetalert.css">
+    <link href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/hotkeys.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/flat-ui.css">
+    <link rel="icon" sizes="192x192" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-192x192.png">
+    <link rel="icon" sizes="160x160" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-160x160.png">
+    <link rel="icon" sizes="96x96" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-96x96.png">
+    <link rel="icon" sizes="32x32" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-152x152.png">
+    <meta name='apple-mobile-web-app-title' content="Complice">
+    <meta name='msapplication-TileColor' content="#9f00a7">
+    <meta name='msapplication-TileImage' content="/mstile-144x144.png">
+    <meta name='application-name' content="Complice">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon">
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/tooltip.css">
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/style.css">
+        <title>Complice app &mdash; Focus on What's Important</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51007115-1', 'complice.co');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+      var g = function (category, action, label) {
+        ga('send', 'event', category, action, label);
+      }
+      //
+
+    </script>
+    <script>
+    var pixelRatio = (window.devicePixelRatio >= 1.5) ? "high" : "normal";
+    ga('set', 'dimension1', pixelRatio);
+    </script>
+    <script src="//load.sumome.com/" data-sumo-site-id="223c8453aad317af811df16ca6a152a8742e26e36e8211bba9f913d72d2ec14a" async="async"></script>
+        <meta name='description' content="Complice helps people achieve their personal and professional goals, by making consistent progress every day.">
+  </head>
+  <body class='  '>
+    <div class='allexceptfooter aef-static-navbar' >
+  <div class='navbar navbar-inverse navbar-fixed-top navbar-small-text' role='navigation'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-collapse" style='padding: 18px; display:none;
+        '>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' rel="home" href="/">
+          <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_dark_trans.png">
+          <span
+          >Complice</span>
+        </a>
+          <div style='display: inline-block; float: right; margin-right: 10px' class='visible-xs'>
+            <a href="/login" class='btn btn-xs btn-primary' style='padding: 8px; margin: 2px; background: #473074; float:right; position: relative; top: 11px;'>Log in</a>
+            <a href="/login" class='btn btn-xs btn-success btn-header-signup' style='padding: 8px; margin: 2px; float:right; position: relative; top: 11px; display: none'>Sign up</a>
+          </div>
+      </div>
+      <div class='navbar-collapse collapse'>
+        <ul class='nav navbar-nav' style="display: none !important;">
+
+          <li class=''></li>
+        </ul>
+        <ul class='nav navbar-nav navbar-right'>
+
+          <li class=''><span><a class='btn btn-success btn-nav-signup btn-header-signup' style='margin-top:9px; padding: 5px; height: 32px;
+          display: none;
+          ' href="/signup" onclick="g('signup', 'click', 'nav')" >&nbsp;Sign up&nbsp;</a></span></li>
+          <!--<li class=''><a href="/signup">Sign up</a></li>-->
+          <li class='dropdown dropdown-login'>
+            <a href="#" class='dropdown-toggle' data-toggle="dropdown">Log in <b class='caret'></b></a>
+            <div class='dropdown-menu logindropdown'>
+              <form style='margin: 0px' accept-charset="UTF-8" action="/login" method="post">
+                <div style='margin:0; padding:0; display:inline'>
+                  <input name='utf8' type='hidden' value="&#x2713;" />
+                  <input name='authenticity_token' type='hidden' value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" />
+                </div>
+                <fieldset>
+                  <input type='text' name='username' placeholder='username' class='form-control' tabindex="1" />
+                  <input type='password' name='password' placeholder='password' class='form-control' tabindex="2" />
+                  <a href="/forgot" class='btn btn-default btn-xs' name='commit' type='submit' tabindex="4">Forgot password</a>
+                  <input class='btn btn-primary' name='commit' type='submit' value="Log in" tabindex="3" />
+                </fieldset>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+
+<div class='container' style='margin-top: 25px'>
+  <h1 style='color:black; margin: -10px 0 20px; font-size:48px; text-align:center'>Make progress every day</h1>
+</div>
+
+<div class='container' id="top-box">
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class='ticker'>
+        <span>Complice is daily planning that helps people</span>
+        <br class='visible-xs'>
+        <div class='ticker-sub'>
+          <ul>
+            <li style='color: #90f'>get a job</li>
+            <li style='color: #3c0'>create passive income</li>
+            <li style='color: #c90'>get better grades</li>
+            <li style='color: #03f'>write regularly</li>
+            <li style='color: #f06'>get in shape</li>
+            <li style='color: #9c0'>finish their PhD</li>
+            <li style='color: #0cc'>nurture their mental health</li>
+            <li style='color: #f30'>record an album</li>
+            <li style='color: #90f'>get a job</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class='row row-index-connects'>
+    <div class='col-md-7'>
+      <p>Complice connects your high-level goals with your day-to-day actions, and helps you think more strategically about your life. This isn't just another to-do list app. It's a system for getting from where you are to where you want to be.</p>
+      <p><strong>Stop organizing your tasks and start doing them.</strong></p>
+    </div>
+    <div class='col-md-5'>
+      <p style='text-align:center'>
+        <a class='btn btn-lg btn-success' onclick="g('signup', 'click', 'top')" href="/signup">Start Free Trial</a>
+      </p>
+      <p style='text-align:center; font-size: small'>No credit card required :)</p>
+      <br>
+    </div>
+  </div>
+
+</div>
+
+<div class='content-section content-section-testimonials' style='background-image: linear-gradient(45deg,#9900aa,#7700ff);'>
+  <div class='container'>
+    <div class='row'>
+      <h1 style='color: white; text-align: center; margin: -15px 0 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.4)'>Over 100,000 steps made towards goals.</h1>
+    </div>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-6 col-md-6 nopadding'>
+        <div class='testimonial-box md-whiteframe-3dp'>
+          <p>
+            &ldquo;<strong>It's tantalisingly great.</strong> Encourages you to think in terms of making regular progress toward the important stuff. And if the built-in pomodoros fit your brain, you can use it to run your daily life.&rdquo;
+            <em class='testimonial-person'>&mdash; Philip, entrepreneur &amp; speaker</em>
+          </p>
+        </div>
+        <div class='testimonial-box md-whiteframe-3dp'>
+          <p>
+            &ldquo;
+            A productivity website that links tasks directly to larger goals and personal values, making the reasons for doing them more salient. Regular reviews encourage reflective self-awareness and
+            a <strong>more qualitative, evaluatory approach</strong> than any other todo-list-type app I've found.&rdquo;
+            <em class='testimonial-person'>&mdash; Jeff, data scientist</em>
+          </p>
+        </div>
+      </div>
+
+      <div class='col-xs-12 col-sm-6 col-md-6 nopadding'>
+        <div class='testimonial-box md-whiteframe-3dp'>
+          <p>
+            &ldquo;<strong>The only todo list that has ever worked for me.</strong>&rdquo;<br>&nbsp;
+            <em class='testimonial-person'>&mdash; Janos, researcher</em>
+            </p>
+        </div>
+        <div class='testimonial-box md-whiteframe-3dp'>
+          <p>
+            &ldquo;I have severe executive dysfunction, because I'm autistic with ADHD and anxiety, so it's hard for me to <span>start tasks, remember what I'm supposed to do</span>, or even <span>be aware of where my day is going</span> &ndash; especially now that I don't at least have college keeping me on track. Every other to-do app has made me overwhelmed. <strong>Complice helps me break down big goals</strong> into 'this specific small thing I can/should do today.'&rdquo;
+            <em class='testimonial-person'>&mdash; Jamie, mathematics grad</em>
+          </p>
+        </div>
+      </div>
+      <div class='testimonial-box md-whiteframe-3dp clearfix' style='background: white; position: relative; padding: 8px 0 8px 103px; margin: 6px 6px 12px; overflow: hidden; max-'>
+        <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/jamesnorris.jpg" style='position: absolute; left: 4px; bottom: 0px; width:99px;'>
+        <p style='padding: 8px; margin: 0'>
+        &ldquo;I've assessed over a thousand tools for behaviour change, and Complice is unique in having <br class='visible-lg visible-md'><strong>so much of the right functionality integrated together coherently.</strong>&rdquo;</span>
+
+        <em style='float: right; text-align: right; margin: 0 6px 6px'>&mdash; James Norris,<br>selfspark.com</em>
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class='content-section content-section-hued'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6'>
+        <div class='clearfix'></div>
+        <h2 class='section-heading'><span class='unwrap'>Hit the ground</span> <span class='unwrap'>running every morning</span></h2>
+        <p class='lead'>How do you begin your day? By checking Facebook or email?</p>
+        <p class='lead'>How would it be different if you began it by making a quick list of the most important things you have to do that day?</p>
+      </div>
+      <div class='col-lg-5 col-sm-pull-6  col-sm-6'>
+      <img class='img-responsive' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/ss/intentions_new.png" alt=''>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='content-section'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-5 col-sm-6'>
+        <hr class='section-heading-spacer'>
+        <div class='clearfix'></div>
+        <h2 class='section-heading'><span class='unwrap'>Ensure each day counts</span> </h2>
+        <p class='lead'>At the end of the day, did you work on what matters?</p>
+        <p class='lead'>Simple accountability emails keep tabs on your daily progress towards your goals.</p>
+      </div>
+      <div class='col-lg-5 col-lg-offset-2 col-sm-6'>
+        <img class='img-responsive' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/outcomes-submit.png" alt=''>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='content-section content-section-hued'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6'>
+        <hr class='section-heading-spacer'>
+        <div class='clearfix'></div>
+        <h2 class='section-heading'><span class='unwrap'>Strategize regularly</span> </h2>
+        <p class='lead'>Do you feel like you could be more awesome if you stopped to think about your life a bit more often?</p>
+        <p class='lead'>Weekly, monthly and annually, Complice assembles a report for you to make it easy to see how things are going, and encourages you to reflect to make the future even better.</p>
+      </div>
+      <div class='col-lg-5 col-sm-pull-6  col-sm-6'>
+      <img class='img-responsive' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/monthly-review-blogging.png" alt=''>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='content-section'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-5 col-sm-6'>
+        <div class='clearfix'></div>
+        <h2 class='section-heading'><span class='unwrap'>Get help from others</span></h2>
+        <ul class='lead'>
+          <li>Connect with an Accountability Partner for social support in achieving your goals.</li>
+          <li>Get productivity advice from a Complice Coach if you're struggling</li>
+
+          <li>Spend time in a <a href="https://complice.co/room/open" onclick="g('button', 'click', 'coworking')" target='_blank'>Coworking Room</a> so your days are social <em>and</em> productive&mdash;even if you work from home!</li>
+          <li>Share your progress with friends&mdash;or the world!</li>
+        </ul>
+      </div>
+      <div class='col-lg-5 col-lg-offset-2 col-sm-6'>
+        <img class='img-responsive' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/coworkingroom-promo-video.png" alt=''>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='content-section content-section-hued' style='background-image: linear-gradient(45deg,#9900aa,#7700ff);'>
+<h1 class='landing-mid-header'>Systematic accomplishment</h1>
+</div>
+
+<div class='content-section'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h2 class='section-heading'><span class='unwrap'>Top posts on the Complice Blog</span></h2>
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-md-4'>
+        <h3><a style='color: #9900aa;' href="http://blog.complice.co/post/121559734412/how-to-start-on-the-most-important-thing-every-day" target='_blank'>How to start on the most important thing every day</a></h3>
+        <p class='testimonial'>&ldquo;Lots of famous folks—James Clear, Leo Babauta—have written about why to do the most important thing first. But they describe it as “straightforward” and “simple”, which… it might not be...&rdquo; &nbsp;<a class='btn btn-primary btn-xs' href="http://blog.complice.co/post/121559734412/how-to-start-on-the-most-important-thing-every-day" target='_blank'>continue reading...</a></p>
+
+      </div>
+
+      <div class='col-md-4'>
+        <h3><a style='color: #9900aa;' href="http://blog.complice.co/post/89137714962/what-kinds-of-distractions-are-good-for-your" target='_blank'>What kinds of distractions are good for your productivity?</a></h3>
+        <p class='testimonial'>&ldquo;Since “multitasking” tends to be counterproductive, and working intently for hours on end is hard to do consistently, it can make sense that we might want to find healthy ways to distract ourselves in between rounds of working.&rdquo; &nbsp;<a class='btn btn-primary btn-xs' href="http://blog.complice.co/post/89137714962/what-kinds-of-distractions-are-good-for-your" target='_blank'>continue reading...</a></p>
+
+      </div>
+
+      <div class='col-md-4'>
+        <h3><a style='color: #9900aa;' href="http://blog.complice.co/post/141528302742/try-thinking-of-your-goals-as-dimensions" target='_blank'>Try Thinking of Your Goals as Dimensions</a></h3>
+        <p class='testimonial'>&ldquo;You have where you are, and you have where you want to be (roughly), and your goals can describe the directions you’ll need to travel in order to get to where you want to be.&rdquo; &nbsp;<a class='btn btn-primary btn-xs' href="http://blog.complice.co/post/141528302742/try-thinking-of-your-goals-as-dimensions" target='_blank'>continue reading...</a></p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class='content-section content-section-saturated'>
+  <div class='container'>
+    <div class='row demo-tiles'>
+
+      <div class='col-xs-6 col-sm-3 col-md-3'>
+        <div class='tile md-whiteframe-3dp'>
+          <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/target-eye.png" alt='' class='tile-image big-illustration'>
+          <h3 class='tile-title'>Be Accountable</h3>
+          <p>Plan your days, follow through, and reflect.</p>
+        </div>
+      </div>
+
+      <div class='col-xs-6 col-sm-3 col-md-3'>
+        <div class='tile md-whiteframe-3dp'>
+          <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png" alt='' class='tile-image'>
+          <h3 class='tile-title'>Stay Focused</h3>
+          <p>Spend your time on high-quality work and fulfilling play.</p>
+        </div>
+      </div>
+
+      <div class='col-xs-6 col-sm-3 col-md-3'>
+        <div class='tile md-whiteframe-3dp'>
+          <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/clock-and-calendar.png" alt='' class='tile-image'>
+          <h3 class='tile-title'>Make a Daily Routine</h3>
+          <p>Get better sleep and live more consciously.</p>
+        </div>
+      </div>
+
+      <div class='col-xs-6 col-sm-3 col-md-3'>
+        <div class='tile md-whiteframe-3dp'>
+          <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/track-progress.png" alt='' class='tile-image'>
+          <h3 class='tile-title'>Track your Progress</h3>
+          <p>Never again have to wonder "what did I even do that day?"</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class='content-section content-section-hued'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <h2 class='section-heading'><span class='unwrap'>How people use Complice...</span></h2>
+      </div>
+    </div>
+    <div class='row'>
+      <p class='how-i-use hiu-1'>&ldquo;I have made great progress with my android game I'm currently developing, increasing my programming time from 1-2 hours to 2-5 hours a day.&rdquo;</p>
+      <p class='how-i-use hiu-2'>&ldquo;I wrote a 50,000-word novel for National Novel Writing Month! Checking off my "write 1,667 words" task each day was incredibly helpful.&rdquo;</p>
+      <p class='how-i-use hiu-3'>&ldquo;Complice is one of the tabs that opens up automatically on my computer at the office. Each morning I try to fill in all the larger tasks and goals that I want to concentrate on that day.&rdquo;</p>
+      <p class='how-i-use hiu-2'>&ldquo;My boyfriend introduced it to me and suggested that we use it to stay updated on each others' lives while we're doing the long distance thing.&rdquo;</p>
+      <p class='how-i-use hiu-2'>&ldquo;Scored 100% on both the HSK1 and HSK2 exams, got into a habit of using Beeminder to keep on top of my habits/goals.&rdquo;</p>
+      <p class='how-i-use hiu-3'>&ldquo;I'm volunteering a lot more. I'm also being much more realistic about what I can accomplish during a day.&rdquo;</p>
+      <p class='how-i-use hiu-1'>&ldquo;Major weight loss, major dating life improvement, ramp up knowledge of and involvement in the machine learning world.&rdquo;</p>
+      <p class='how-i-use hiu-3'>&ldquo;Complice has helped me stay on track with apartment renovations while keeping up with being a mom, a school volunteer, and running my business.&rdquo;</p>
+    </div>
+    <div class='row' style='display: none'>
+      <div class='col-md-4'>
+
+        <p class='testimonial'>&ldquo;I'll be honest, I read your description of Complice and didn't understand it. I was just looking to try something new because my old systems didn't really work at all, but <strong>the more I get into Complice, the more it works</strong>. Which seems like the opposite of anything else I've used.</p>
+        <p class='testimonial'>Now it's what holds everything together for me. Complice is the be all end all.&rdquo;</p>
+        <p class='testimonial-author'><em>&mdash; Ben, freelancer</em></p>
+      </div>
+
+      <div class='col-md-4'>
+        <hr class='section-heading-spacer'>
+        <div class='clearfix'></div>
+        <p class='testimonial'>&ldquo;With two kindergarten-age kids, full-time employment, and various other responsibilities, my weeks all blur together. Years pass by ever faster and faster. <strong>Complice weekly reviews let me take snapshots of my situation</strong> and prompt me to do some tactical planing to steer things in the right direction.&rdquo;</p>
+        <p class='testimonial-author'><em>&mdash; Tadek, software engineer</em></p>
+        <hr class='section-heading-spacer'>
+        <div class='clearfix'></div>
+      </div>
+
+      <div class='col-md-4'>
+        <div class='clearfix'></div>
+        <p class='testimonial'>&ldquo;I <strong>never thought that a digital tool could help me</strong> with my productivity, like I thought that I needed to write something down, <em>on paper</em>, to get it done. But I felt like my days weren't organised enough to focus deeply on the things that I truly enjoy. Complice allows me to give structure to my day, prioritize my tasks, and </p>
+        <p class='testimonial'>I now <strong>can't live without Complice</strong>, so yeah.&rdquo;</p>
+        <p class='testimonial-author'><em>&mdash; Kabelo, student</em></p>
+        <div class='clearfix'></div>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+
+<div class='content-section content-section-last' style='max-width: 100%; overflow: hidden;'>
+
+  <div class='container' style='margin-top: -30px; margin-bottom:35px;'>
+    <div class='row'>
+      <h1 style='text-align:center'>Focus on what's important</h1>
+      <p style='text-align:center' class='large' id="index-subtitle">Mouse over the six markers below to learn more...</p>
+      <br>
+    </div>
+    <div class='row'>
+      <div class='col-md-12 today-demo today-demo-list' style='position:relative; padding: 0'>
+        <div class='pin-holder' onclick="pinHolderClick();">
+          <a class='pin' data-tooltip-color='black' style='top: -24px; right: 113px' title="A built-in timer to track to help you focus: to work when it's time to work, and to remember to take breaks." pintip></a>
+          <a class='pin' data-tooltip-color='black' style='top: -24px; left: 187px' title='Switch between two modes:<br>doing the top thing and reordering your list.' pintip></a>
+          <a class='pin' data-tooltip-color='black' style='top: 195px; left: 30px' title='Select tasks, complete, reorder and so much more using dozens of hotkeys.' pintip></a>
+          <a class='pin' data-tooltip-color='black' style='top: 240px; left: 315px' title="Miscellanous tasks are grey so it's really clear what's goal-oriented and what isn't." pintip></a>
+          <a class='pin' data-tooltip-color='black' style='bottom: 29px; right: 200px' title='Your tasks are color-coded by goal so you can see how balanced your day is between different goals.' pintip></a>
+          <a class='pin' data-tooltip-color='black' style='bottom: 40px; left: 70px' title='Enter new intentions using the quick, powerful plaintext format that Complice understands.' pintip></a>
+          <a class='fake-tab-switch-button ftsb-next hover-pointer' onclick="toggleTodayDemoMode();"></a>
+          <a class='fake-tab-switch-button ftsb-list hover-pointer' onclick="toggleTodayDemoMode();"></a>
+        </div>
+        <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/today-page-list.png" class='demo-list' style='width: 770px; height: 397px; margin: 0 auto;' />
+        <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/today-page-next.png" class='demo-next' style='width: 770px; height: 397px; margin: 0 auto;' />
+      </div>
+    </div>
+  </div>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-lg-8 col-sm-9'>
+        <h2 class='section-heading'><span class='unwrap'>Pricing</span></h2>
+        <p class='lead'><strong>This <em>isn't</em> just another to-do list app.</strong> It's a system for achieving your goals. And where life-coaches charge hundreds of dollars to keep you on track towards your goals, Complice costs just $12 per month.</span></p>
+
+        <p class='lead'>But you probably want to use it first, so go ahead and click the button to try it for free.</p>
+      </div>
+      <div class='col-lg-3 col-lg-offset-1 col-sm-3' style='position: relative'>
+        <div class='clearfix'></div>
+        <p style='text-align:center; margin-top:70px'>
+          <a class='btn btn-lg btn-success' href="/signup" onclick="g('signup', 'click', 'bottom')" style='margin: 20px 0 0'>Sign me up</a>
+        </p>
+        <p style='text-align:center; font-size: small'>No credit card required :)</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fastlyPath = https://complicemail-herokuapp-com.global.ssl.fastly.net -->
+
+
+
+
+  </div>
+
+  <div class='footer navbar navbar-default navbar-bottom'>
+    <div class='container'>
+      <div class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
+        <div class='navbar-header navbar-right'>
+          <a class='navbar-brand' rel="home" href="/">
+            <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+          </a>
+        </div>
+          <ul class='nav navbar-nav'>
+            <li class=''><a href="/about">About</a></li>
+            <li class=''><a href="/faq">FAQ</a></li>
+            <li class=''><a href="/features">Features</a></li>
+            <li class=''><a href="/newsletter">Newsletter</a></li>
+            <li><a href="http://blog.complice.co">Blog</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+    <div class='feedback-box loggedout'>
+      <a class='feedback-close-btn'>
+        <span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span>
+      </a>
+      <a class='feedback-box-tabby'>
+
+
+
+        Question?
+      </a>
+      <div class='feedback-box-main'>
+        <form id="feedback-form" action="">
+          <input type='hidden' name='page' value="">
+
+          <h4 style='margin: 8px 0'>What's on your mind?</h4>
+
+          <textarea name='freeformfeedback' class='form-control'
+
+
+
+          placeholder="Not sure about something? Sign-up process not working? Let us know!"
+          rows="10" style='min-height:238px'></textarea>
+          <input type='email' class='form-control' name='email' placeholder='email address so we can reply' style='margin-top:2px; font-size: 12px' id="feedback-email">
+          <div style='padding-top:4px'>
+            <button style='float:right;' class='btn btn-primary feedback-submit-btn' disabled="true">Send question?!
+            </button>
+            <div style='position: relative; top: 1px; padding: 5px; display: none; background: white; float: right; border-radius: 50%; margin-right: 5px' id="feedback-loading-spinner">
+              <div class='pacman'></div>
+            </div>
+            <div class='clearfix'></div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/sweetalert.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tinycolor/1.0.0/tinycolor.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.tpl.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/hotkeys.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/moment.min.js"></script>
+        <script src="/js/complicemon.js" type='text/javascript'></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/tooltip.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/index.js"></script>
+
+
+
+
+
+    <div class='checkpath-container-container'>
+      <svg class='checkpath-container' pointer-events='none' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+        <path id="checkpath" class='ccdfl checkpath' d="M 50 0 L 60 10 L 20 50 L 0 30 L 10 20 L 20 30 Z"/>
+      </svg>
+    </div>
+  </body>
+</html>

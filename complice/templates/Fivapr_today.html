@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="Complice &mdash; focus on what's important" />
+    <meta property="og:description" content="Make more progress on your goals." />
+    <meta property="og:image" content="https://complice.co/img/product-overview-2.png" />
+    <meta property="og:logo" content="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+
+    <meta name='theme-color' content="#9600FF">
+    <link rel="manifest" href="/manifest.json">
+    <meta name='mobile-web-app-capable' content="yes">
+    <meta name='apple-mobile-web-app-capable' content="yes">
+    <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/sweetalert.css">
+    <link href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/hotkeys.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/flat-ui.css">
+    <link rel="icon" sizes="192x192" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-192x192.png">
+    <link rel="icon" sizes="160x160" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-160x160.png">
+    <link rel="icon" sizes="96x96" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-96x96.png">
+    <link rel="icon" sizes="32x32" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-152x152.png">
+    <meta name='apple-mobile-web-app-title' content="Complice">
+    <meta name='msapplication-TileColor' content="#9f00a7">
+    <meta name='msapplication-TileImage' content="/mstile-144x144.png">
+    <meta name='application-name' content="Complice">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon">
+    <link href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/angular-loading-bar.css" rel="stylesheet"><link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/datepicker.css" />
+
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/style.css">
+    <link rel="stylesheet" media="all" id="usercss" href="/Fivapr/user.css?v=6">
+    <title>Daily intentions on Complice</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51007115-2', 'complice.co');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+      var g = function (category, action, label) {
+        ga('send', 'event', category, action, label);
+      }
+      //
+
+    </script>
+        <meta name='description' content="Complice helps people achieve their personal and professional goals, by making consistent progress every day.">
+  </head>
+  <body ng-app="complice" class='  '>
+    <div class='allexceptfooter aef-static-navbar' ng-controller='TodayCtrl'>
+  <div class='navbar navbar-inverse navbar-fixed-top navbar-small-text' role='navigation'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-collapse" style='padding: 18px;'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' rel="home" href="/?s">
+          <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_dark_trans.png">
+          <span
+          class='hidden-sm-inline'
+          >Complice</span>
+        </a>
+      </div>
+      <div class='navbar-collapse collapse'>
+        <ul class='nav navbar-nav' >
+          <li class=''><a href="/Fivapr/">Timeline</a></li>
+
+          <li class='dropdown incomplete-bother incomplete-bother-angular' ng-cloak ng-show='recentIncompleteEntries.length'>
+            <a href="#" class='dropdown-toggle' data-toggle="dropdown" title='{[{recentIncompleteEntries.length}]} recent incomplete entries'>
+              <span class='nav-bother n-{[{recentIncompleteEntries.length}]}'>
+                {[{recentIncompleteEntries.length}]}
+              </span>
+            </a>
+            <ul class='dropdown-menu'>
+              <li ng-repeat='ymd in recentIncompleteEntries'><a ng-href="/Fivapr/#header-{[{ymd}]}">Submit outcomes for {[{ymd}]}</a></li>
+            </ul>
+          </li>
+          <li class='nav-today-link active'><a href="/Fivapr/today">Today
+            <span class='notdonesOnOtherPages'>
+              (1)
+            </span>
+            <span id="navnotdone" class='ng-cloak'>
+              {[{remainingcount ? ' (' + remainingcount + ')' : ''}]}
+            </span>
+          </a>
+
+          <div class='click-on-today-arrow'>
+            <span class='glyphicon glyphicon-arrow-up'></span>
+          </div>
+
+          </li>
+          <li class=''><a href="/Fivapr/goals">Goals</a></li>
+          <li class=''><a href="/Fivapr/reviews/">Reviews</a></li>
+          <li class=''><a href="/rooms">Rooms</a></li>
+        </ul>
+        <ul class='nav navbar-nav navbar-right'>
+            <li id="partnerReq"
+            style='display:none;'
+            >
+              <span><a class='btn btn-primary' style='margin-top:9px; padding: 5px; height: 32px;' href="/Fivapr/settings#partner" title='Click to view request'>
+              <span class='glyphicon glyphicon-plus'></span>
+              <span class='glyphicon glyphicon-user'></span>
+              <span class='hidden-md-inline hidden-sm-inline hidden-xs-inline'>Partner request from</span>
+              REQUESTFROMUSERNAME
+              </a></span>
+            </li>
+                <li style='margin: 2px 8px;'><span><a class='btn btn-danger' style='margin-top:4px; padding: 3px; height: 41px; font-size: 12px; ' href="/Fivapr/settings#payment">
+                  <span style='background: white; padding: 2px ; color: #d9534f; display: inline-block; border-radius:2px; text-shadow:none; float:left; margin-bottom: -4px;' id="daysRemaining">
+                  &nbsp;<span id="daysRemaining-N">8</span>
+                  day<span class='hide-if-one-8' id="daysRemaining-S">s</span>
+                  <span class='hidden-sm-inline'> remaining</span>&nbsp;
+                  </span><br>
+                  <span style='display: inline-block; margin-top: 6px'><span class='hidden-sm-inline'>Upgrade </span><span class='glyphicon glyphicon-plus-sign'></span></span></a></span>
+                </li>
+
+                          <li class='dropdown'>
+              <a href="#" class='dropdown-toggle' data-toggle="dropdown">Fivapr <b class='caret'></b></a>
+              <ul class='dropdown-menu'>
+                <li><a href="/Fivapr/settings">Settings</a></li>
+                <li><a href="/Fivapr/refer">Refer Friends</a></li>
+                <li><a href="/logout">Log out</a></li>
+              </ul>
+            </li>
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+<img id='animato' src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px'>
+<div class='container container-today   ' ng-class='dayofweek' ng-cloak>
+  <div>
+    <div class='alert alert-primary tip tip-large col-md-6 col-sm-8 col-md-offset-3 col-sm-offset-2 tip-payment' ng-show="paymentMessage">
+      <p ng-repeat="paragraph in paymentMessage">
+        {[{paragraph}]}
+      </p>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+    <div>
+
+
+
+
+
+        <div id="confirmEmail" class='alert alert-warning' style='text-align:center; margin-right: 175px;'>
+      <p>Hey there! You haven't confirmed your email address (270696@mail.ru) yet.
+      &nbsp;<span class='unwrap'>
+      <button ng-click="sendConfirmEmail()" class='btn btn-default'><span class='glyphicon glyphicon-envelope'></span> Resend confirmation</button>
+      &nbsp;
+      <a href="/Fivapr/settings#email" class='btn btn-default'><span class='glyphicon glyphicon-cog'></span> Change my email</a>
+      </span>
+
+      </p>
+    </div>
+            <div class='alert alert-primary tip tip-large' style='display: inline-block' data-tipcode="todayHotkeys" ng-show="todolist.length">
+      <p><span class='label label-primary'>Pro tip</span> do things even faster with hotkeys! Press <code>?</code> to view them.</p>
+
+    </div>
+        <div class='alert alert-info tip' data-tipcode="dragIntentions" style='display: inline-block; text-align:center' ng-hide="todolist.length <= 1">
+      <p><span class='glyphicon glyphicon-move'></span> &nbsp; Tip: you can drag the items to put them in the order you're going to do them.</p>
+      <button type='button' style='margin:6px auto -6px' class='btn btn-sm btn-info' data-dismiss='alert'>gotcha</button>
+    </div>
+
+    <div class='alert alert-success tip' data-tipcode='pomoAssignment' style='display: inline-block; text-align:center; margin-right: 350px;' ng-show="user.today.sparePomos">
+      <button type='button' class='close' data-dismiss='alert' title='close this tip'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+      <img src="/img/pomodoro.png" style='float: left; width: 48px;'>
+      <p style='font-size: 16px'><span class='unwrap'>Tip: mouse over a task and click on the tomato there</span> <span class='unwrap'>to indicate that you've completed a pomodoro towards that task.</span></p>
+      <p style='font-size: 16px'><span class='unwrap'>The box on the right shows how many tomatos you have available to assign.</span> <span class='unwrap'>If you didn't focus during a pomo, you can delete it by clicking on the tomato in the box.</span></p>
+    </div>
+        <div class='row row-alerts' id="alertbar">
+    </div>
+
+
+    <noscript>
+    <div class='row row-alerts'>
+      <div class='alert alert-warning'>
+        <button type='button' class='close' data-dismiss='alert'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+        You're going to need to enabled JavaScript to use this site, even here on the signup page.&nbsp;
+      </div>
+    </div>
+    </noscript>
+    <div id="alertbar_today"></div>
+    <div class='jumbo-loading' ng-hide="fetched">
+      Loading {[{todateName}]}'s intentions...
+    </div>
+
+  </div>
+
+  <div class='container-today-settings'>
+    <button class='btn btn-default' ng-click="g('button', 'toggle', 'settings'); showSettings()">
+      <span class='glyphicon glyphicon-cog'></span>
+    </button>
+  </div>
+
+  <div ng-hide="state === 'deactivated'" style='position: relative; z-index: 1038; height: 0; overflow: visible;'>
+    <div class='today-stuff-above' style='height: 0; overflow: visible;'>
+      <div class='clearfix'></div>
+      <div  class='container container-timer' style='height: 0; overflow: visible;'>
+        <timer user="user" ng-if="timer" timer="timer"  username="Fivapr" special-current="specialCurrent" fns="timerFuncs"></timer>
+      </div>
+    </div>
+  </div>
+  <div style='height:40px' ng-hide="fetched && todolist.length && !todaysOutcomesMode">&nbsp;</div>
+  <div class=' todo-tab-row' style='position: relative; z-index: 960; overflow: hidden;' ng-show="fetched && todolist.length && !todaysOutcomesMode">
+    <ul class='nav nav-tabs'>
+      <li><div id='syncstate'>
+        <em ng-show="state === 'saving'">Saving...</em>
+        <em ng-show="state === 'submitting'">Submitting...</em>
+        <span ng-show="state === 'saved'">Saved</span>
+        <strong ng-show="state === 'offline' || state === 'disconnected'" class='text-info'
+        >Offline</strong>
+        <span ng-show="state === 'error'" class='text-warning' title='{[{errorMessage}]}'>Error</span>
+      </div></li>
+      <li class='tabber-next'><a href='#next' data-toggle='tab' id='nexttab' class='ccdbr124 goal-{[{currentTodo.code || "x"}]}' ng-class='{ccwbg: !darktheme, ccdbg: darktheme, ccdfg: !darktheme, ccmfg: darktheme}'>Next Action</a></li>
+      <li class='tabber-list active' ng-hide="state === 'deactivated' || user.guest"><a href='#list' class='tabber-list-org' data-toggle='tab'>Organize</a></li>
+    </ul>
+  </div>
+  <div class='todotabs tab-content' ng-class='showPartnerData ? (mode === "list" ? "col-md-6 col-sm-6 clearfix" : "col-md-8 col-sm-8 clearfix") : ""' ng-show="fetched && todolist.length && !todaysOutcomesMode" style='height: auto; min-height:40px; position: relative; z-index: 950;'>
+    <div id='list' class='col-md-12 intentions tab-pane active ' ng-class='showPartnerData ? "tab-pane-room" : ""'>
+      <div class='col-sm-10 col-md-10 col-md-offset-1' ng-class='showPartnerData ? "col-12-fosho" : ""'>
+        <div class='done-visible-toggle-box' title="{[{hideCompletedItems ? 'Show ' : 'Hide'}]} completed items."
+          ng-class='{"done-hidden": hideCompletedItems, "done-visible": !hideCompletedItems}'
+          ng-click="toggleDoneVisible()"><!-- Checkbox by Arthur Shlain from the Noun Project, with moditifications -->
+        </div>
+        <h3 style='color: #8b7996'> {[{todolist.length}]} intention{[{todolist.length - 1 ? 's' : ''}]} for <span class='hide-when-small'>{[{todateName}]}, &nbsp;</span><span style='opacity:0.3; display: inline-block'>{[{dayofweek}]} {[{todateNice}]}</span></span><div id='remainingcount2' ng-show="remainingcount">({[{remainingcount}]}<span class='hide-when-small'> / {[{remainingDenominator}]}</span> left)</div></h3>
+        <div id='sortable' class='scroll-heightable' ui-sortable="sortableOptions" ng-model="todolistFiltered">
+          <div ng-repeat="item in todolistFiltered" class='item-wrapper goal-{[{item.code}]}'
+          ng-class='{selected: item.selected, nevermind: item.nevermind, ccwbg: isMobile && !darktheme, ccbbg: isMobile && darktheme}'
+          >
+            <span class="goal-{[{item.code || 'x'}]} item" ng-class='{notdone: !item.done, nevermind: item.nevermind}' data-goal="{[{item.code || 'x'}]}" data-ix="{[{$index}]}">
+              <a class='dragger' ng-hide="state === 'offline' || state === 'disconnected'">
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+              </a>
+              <input ng-model="item.done" ng-change="filterTodolist(); queueUpdate()" type='checkbox' id="{[{item._id}]}"
+              ng-disabled="!perm || item.blocking || item.nevermind || state === 'offline' || state === 'disconnected'">
+              <span class='item-label-wrapper item-label-wrapper-{[{$index}]}'>
+                <label class="goal-{[{item.code || 'x'}]} item-label-{[{$index}]} ccmfg" ng-class='{done: item.done}' for='{[{item._id}]}' ng-bind="item.text" linkify>
+                </label>
+                <span class='item-pomo-stuff' ng-class='{done: item.done}'>
+                  <span ng-show="item.pomosDone">
+                    (<label class='hide-when-distraction-free' for='{[{item._id}]}'>{[{item.pomosDone}]} {[{"pomo" + (item.pomosDone === 1 ? "":"s")}]} complete</label><img ng-repeat="p in range(item.pomosDone) track by $index" src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px'></span><a class='add-pomo add-pomo-{[{$index}]}' ng-show="user.today.sparePomos && !item.nevermind && !(state === 'offline' || state === 'disconnected')" ng-click="assignPomo($index);"><span>+</span><img src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px; opacity: 0.5' /></a><span ng-show="item.pomosDone" style='padding-left: 2px'>)</span>
+                </span>
+              </span>
+              <a class='item-menu-btn' ng-click="showItemModal(item, $index, $event)">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8 8" style='enable-background: new 0 0 8 8;' xml:space="preserve">
+                <g>
+                  <circle cx="4" cy="1" r="1"/>
+                  <circle cx="4" cy="4" r="1"/>
+                  <circle cx="4" cy="7" r="1"/>
+                </g>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-1 today-partner-side-tall-button' ng-show="partner && !showPartnerData" ng-click="showPartnerData = !showPartnerData">
+        see<br>partner
+      </div>
+    </div>
+    <div id='next' class='col-md-12 tab-pane  goal-{[{currentTodo.code || "x"}]}' ng-class='{"tab-pane-room": showPartnerData,ccwbg: !darktheme, ccdbg: darktheme}'>
+      <div id='nowdothis'>
+        <div ng-show="(currentTodo.pomosDone || user.today.sparePomos) && state !== 'deactivated' && currentTodo.code" class='ndt ndt-pomo'>
+          <span ng-show="currentTodo.pomosDone" class='nexa-pomo-stuff goal-{[{currentTodo.code}]} ccmfg'><span style='opacity: 0.5'>({[{currentTodo.pomosDone}]} {[{"pomo" + (currentTodo.pomosDone === 1 ? "":"s")}]} complete)</span>
+              <img ng-repeat="p in range(currentTodo.pomosDone) track by $index" src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px'></span>
+            <a class='add-pomo' ng-show="user.today.sparePomos" ng-click="assignPomo();"><span>+</span><img src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px; opacity: 0.5' /></a><span ng-show="item.pomosDone">)</span>
+        </div>
+        <div ng-repeat="todo in [currentTodo]" class='ndt ndt-text' ng-class="todo.pomosDone ? 'pomospresent' : ''">
+          <span class='goal-{[{todo.code}]} item' linkify>{[{todo.text || (user.guest ? 'click below to set your task' : '')}]}</span>
+        </div>
+        <div ng-hide="currentTodo" style='text-align:center; width:80%'>
+          You're all finished! <img src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/grin.png'>
+        </div>
+      </div>
+      <button id='donebtn' ng-show="remainingcount && state !== 'deactivated'" class='btn btn-default btn-jumbo ccdfg btn-done-check-anim' ng-click="g('button', 'complete', 'nexa'); completeCurrent(true);" ng-class='{cclbg: !darktheme, ccmbg: darktheme}' >
+        Done <span class='glyphicon glyphicon-ok' style='top: 4px;'></span>
+      </button>
+      <a ng-show="state === 'deactivated'" class='btn btn-default btn-jumbo btn-success' href="/Fivapr/settings#payment">Do</a>
+    </div>
+    <div class='guest-prompt-signup'>
+      <div class='alert alert-primary'>
+        <button type='button' class='close' data-dismiss='alert'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+        Register on Complice to log historical dones and to plan out your days to achieve your goals.
+        <a class='btn btn-primary' href="/signup?roomToCheckOut=&internalSrc=insideRoom" target='_blank'>Click here to sign up</a>&nbsp;
+      </div>
+    </div>
+  </div>
+  <div ng-show="showPartnerData && todolist.length && !todaysOutcomesMode" class='partner-half-tab pull-right' ng-class='mode === "list" ? "col-md-6 col-sm-6" : "col-md-4 col-sm-4"'>
+    <div class='col-md-10 col-sm-10' ng-show="mode === 'list'">
+      <h3 style='color: #8b7996'>
+
+      <span ng-show='partner.list.length'>
+        <a href="/{[{partner.username}]}/" class='headerlink'>{[{partner.name}]}</a>'s {[{}]} intention{[{partner.list.length - 1 ? 's' : ''}]}
+      </span>
+      <span ng-hide='partner.list.length'>
+        <a href="/{[{partner.username}]}/" class='headerlink'>{[{partner.name}]}</a> hasn't set intentions
+      </span>
+      for
+      <span style='opacity:0.3; display: inline-block'>
+        {[{partner.dayofweek}]} {[{partner.todateNice}]}
+      </span>
+      </h3>
+      <div style='min-height: 30px'>
+        <div ng-repeat="item in partner.list" ng-class='{nevermind: item.nevermind}' class='item-wrapper'>
+          <span class='item' ng-class='{notdone: !item.done, nevermind: item.nevermind}' style='color: {[{item.color}]};'>
+            <input ng-model="item.done" type='checkbox' disabled='true'>
+            <span class='item-label-wrapper'>
+              <label style='color: {[{item.color}]};' ng-class='{done: item.done}' linkify>
+                {[{item.text}]}
+              </label>
+              <span class='item-pomo-stuff' ng-class='{done: item.done}'>
+                <span ng-show="item.pomosDone">
+                  <img ng-repeat="p in range(item.pomosDone) track by $index" src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px'>
+                </span>
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class='goalsbar-outer' style='margin: 5px 0;'>
+        <span ng-repeat="goal in partnerGoals" >
+          <span class='goalsbar goalsbar-container'>
+            <span class='goalsbar goalsbar-main' style='background-color: {[{goal.color}]}'>
+              {[{goal.code}]} {[{goal.name}]}
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div class='col-md-9 col-sm-9 partner-nexa' style='background-color: {[{partner.nexa.wcolor}]};' ng-show="mode === 'next'">
+      <strong style='color: rgba(34,17,34,0.75);'>{[{partner.name}]}</strong>
+      <span style='color: {[{partner.nexa.color}]}'>{[{partner.nexa.text}]}</span>
+
+    </div>
+    <div class='today-partner-side-tall-button' ng-class='mode === "list" ? "col-md-2 col-sm-2" : "col-md-3 col-sm-3"' ng-show="partner && showPartnerData" ng-click="showPartnerData = !showPartnerData">
+      hide
+    </div>
+  </div>
+
+
+  <div ng-show="mode === 'next' && !paymentMessage">
+    <div class='alert alert-info tip' id="chromeExtensionTip" data-tipcode="chromeExtension" style='display: inline-block; margin-top: 20px; text-align:center' >
+      <img style='width: 320px; height: 200px; float: left' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/cntp_screenshot_trans.png">
+      <div style='float: right; margin-top: 15px; margin-right: 15px;'>
+        <p>Like the simplicity of seeing just one action and this giant done button?</p>
+        <p>Install the Complice New Tab Page Chrome Extension.</p>
+        <button type='button' style='margin:6px auto -6px' class='btn btn-sm btn-default' onclick="$('#chromeExtensionTip').alert('close')">not for me</button>
+        &nbsp;
+        <button type='button' style='margin:6px auto -6px' class='btn btn-sm btn-info' onclick="chrome && chrome.webstore.install('https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon', chromeInstallSuccess, chromeInstallFail)">Add to Chrome</button>
+        <p style='display: none; margin-top: 20px; clear: both' id="crxNotSure">Not sure? Open <a href="https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon" target='_blank' style='text-decoration: underline' class='alert-link'>the webstore page for later.</a> </p>
+      </div>
+    </div>
+    <div class='alert alert-success tip' id="crxTipSuccess" style='display: inline-block; margin-top: 20px; text-align:center; display: none;'>
+      <button type='button' class='close' data-dismiss='alert'><span aria-hidden='true'>&times;</span><span class='sr-only'>Close</span></button>
+
+      <p>Success! Press Ctrl+T to try it out.</p>
+    </div>
+  </div>
+
+
+  <div ng-hide="state === 'deactivated'">
+    <div class='today-below-btns'>
+      <div style='height:40px; clear:both' ng-show="fetched && todolist.length"></div>
+      <!---->
+      <div class='goalsbar-outer' ng-class='{"goalsbar-filterbtns" : user.goals.length > 1 && updateGoalFilter}' ng-cloak>
+        <span ng-repeat="goal in user.goals" ng-style="{display: showGoalsBarStats ? 'block' : 'inline'}">
+          <span ng-class="{'goalsbar-expanded' : showGoalsBarStats, ccwbg: !darktheme, ccdbg: darktheme}" class='goalsbar goalsbar-container goal-{[{goal.code}]}'>
+            <span class='goalsbar goalsbar-main goal-{[{goal.code}]}'
+                  ng-class='{ccmbg: !goalFilter || goalFilter[goal.code], ccwbg: !darktheme && goalFilter && !goalFilter[goal.code], ccbbg: darktheme && goalFilter && !goalFilter[goal.code]}'
+                  ng-style='{color: darktheme ? "black" : ""}'
+                  ng-click="user.goals.length > 1 && updateGoalFilter(goal.code)">
+              {[{goal.code}]} {[{goal.name}]}
+            </span>
+            <span ng-show="showGoalsBarStats">
+              <span ng-show="goal.stats.currentStreak > 0" class='goalsbar goalsbar-stat goal-{[{goal.code}]}' ng-class="{ccbbg: !darktheme, ccwfg: !darktheme, ccmbg: darktheme, ccdfg: darktheme}">
+                ({[{goal.stats.currentStreak}]} {[{goal.stats.currentStreak > 1 ? 'days in a row' : 'day so far'}]})
+              </span>
+              <span ng-show="goal.stats.unStreak > 0" class='goalsbar goalsbar-stat goal-{[{goal.code}]}' ng-class="{ccwbg: !darktheme, ccdfg: !darktheme, ccdbg: darktheme, ccmfg: darktheme}">
+                (nothing for {[{goal.stats.unStreak}]} day{[{goal.stats.unStreak > 1 ? 's' : ''}]})
+              </span>
+              <span ng-show="!goal.stats.currentStreak && !goal.stats.unStreak" class='goalsbar goalsbar-stat goal-{[{goal.code}]} ccgfg'>
+                (nothing yesterday)
+              </span>
+            </span>
+          </span>
+        </span>
+        <span class='goalsbar-togglebtn'>
+          <button class='btn btn-default btn-xs' ng-click="showGoalsBarStats = !showGoalsBarStats">
+            <span ng-show="!showGoalsBarStats" class='glyphicon glyphicon-chevron-down'></span>
+            <span ng-show="showGoalsBarStats" class='glyphicon glyphicon-chevron-up'></span>
+          </button>
+        </span>
+      </div>
+
+      <div class='alert alert-info tip' ng-show="goalFilter" data-tipcode="goalFilter" style='text-align:center'>
+          <p>You've activated the goal filter, so only tasks for certain goals (<span ng-repeat='(k,v) in goalFilter'><span ng-show="$index">, </span>{[{k}]}</span>) are visible.</p>
+
+          <p>Toggle each goal's filter by clicking the goal name just above this box, or by pressing e.g. &nbsp; <span class='cfp-hotkeys-key'>alt</span>+ <span class='cfp-hotkeys-key' ng-repeat='(k,v) in goalFilter' ng-hide="$index">{[{k}]}</span></p>
+        <button type='button' style='margin: 2px auto -40px' class='btn btn-sm btn-info' data-dismiss='alert'>got it! don't show this again</button>
+      </div>
+            <!---->
+      <button type='button' class='btn btn-default hide-when-distraction-free donthide-xs' id="submitmorebtn" ng-click="showsubmitmore = !showsubmitmore; g('button', 'toggle', 'intentions')" ng-hide="yesterHtml || showsubmitmore || (!todolist.length) || todaysOutcomesMode" ng-cloak>
+        Enter <span ng-show="todolist.length">more</span> intentions for {[{todateName}]}
+      </button>
+      <button type='button' class='btn btn-primary hide-when-distraction-free donthide-xs' ng-show="outcomesOclock && !todaysOutcomesMode && !showsubmitmore" ng-click="prepTodaysOutcomes(); g('button', 'toggle', 'outcomes')">Enter outcomes for today</button>
+    </div>
+
+    <div id="todoform" ng-show="fetched && (showsubmitmore || showNextdayIntentions || (!todolist.length && !outcomeHtml))" ng-cloak>
+        <legend style='padding: 0 10px;'>
+          <button type='button' class='btn btn-default' id="hidesubmitmorebtn" ng-click="showsubmitmore = false; showNextdayIntentions = false; g('button', 'toggle', 'intentions')" ng-show="todolist.length">Hide</button>
+          <span ng-show="showNextdayIntentions">Start drafting what's up for tomorrow...</span>
+          <span ng-hide="showNextdayIntentions">What <span ng-show="todolist.length">else </span>are you doing towards your goals {[{todateName}]}?</span>
+
+          &nbsp; &nbsp; <button type='button' class='btn btn-default' id="showsubmitoutcomesbtn" ng-click="showsubmitmore = !showsubmitmore; g('button', 'toggle', 'outcomes')" ng-show="outcomeHtml">Submit outcomes from yesterday</button>
+          <span style='font-size: 14px; font-weight: bold; color: #f0ad4e;' ng-show="outcomesHtml">(if you don't, your checkmarks will be lost)</span>
+        </legend>
+        <div ng-show="overduePriorities.length" style='clear:both; margin: 0 0 10px;' class='today-priorities-container'>
+          <h4 class='col-md-3 col-sm-3 col-xs-4' style='text-align: right'>Priorities due {[{todateName}]}:</h4>
+          <div class='col-md-9 col-sm-9 col-xs-8'>
+            <div ng-repeat="goal in overduePriorities" class='goal-{[{goal.code}]} ccmbg today-priority' style='display: inline-block; float:left;'>
+              <span ng-show="goal.milestone.overdue" class='today-priority-overdue-mark' title='this priority is overdue!'>!</span>
+            {[{goal.code}]}<span class='colon'>:</span> {[{goal.milestone.name}]} <span ng-show="goal.milestone.ymd">by {[{goal.milestone.ymd}]}</span>
+
+            <div class='milestone-button-placeholder'>
+            </div>
+            <div class='milestone-button-holder'>
+              <span class='milestone-button' title='Mark this priority as complete.' tabindex="{[{100+$index*10+1}]}" ng-click="milestoneComplete(goal)"><span class='glyphicon glyphicon-ok'></span></span>
+              <span class='milestone-button milestone-button-bottom' title='Abandon this priority.' tabindex="{[{100+$index*10+2}]}" ng-click="milestoneAbandon(goal)"><span class='glyphicon glyphicon-remove'></span></span>
+              <span class='milestone-button milestone-button-edit' title='Edit this priority.' tabindex="{[{200+$index*10+3}]}" ng-click="editPriorityModal(goal)"><span class='glyphicon glyphicon-pencil'></span></span>
+            </div>
+            </div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='col-md-5 hidden-sm hidden-xs pull-right'>
+          <p ng-hide="user.todaySettings.hideBasicFormats" class='help-block'>
+          Try to come up with a list small enough you can confidently commit to, but large enough you'll feel proud if you held yourself accountable to them.
+          <span ng-hide="todolist.length">You can add more items later, but you can't remove them.</span> At the end of the day, you'll see how you did compared to your intentions.</p>
+          <div ng-hide="user.todaySettings.hideBasicFormats && !attnFormat" ng-class='attnFormat ? "attnFormat" : ""'>
+            <p ng-show="attnFormat" class='help-block'>This format's a little bit weird (eg. you end up with more than one of the same number) but trust me, it works well once you get used to it!</p>
+            <h3 style='margin-top:-3px'>Intention format:</h3>
+            <p class='format'>2) something for goal 2<br>
+              1) something for goal 1<br>
+              &amp;) miscellaneous todo<br>
+              2) another goal 2 todo<br>
+              etc
+            </p>
+          </div>
+
+        </div>
+
+        <div ng-show="showNextdayIntentions" class='col-md-6' ng-class='{"col-md-offset-3": user.todaySettings.hideBasicFormats}'>
+          <div class='form-group'>
+            <colored-intentions id="todosNextday" focus-var="showNextdayIntentions" ng-model="intentionsNextday"></colored-intentions>
+            <span class='help-block'>(This will save as a draft automatically, then when you submit your outcomes it'll appear in the normal intentions box.)</span>
+            <h4 class='dailies-container'>
+              <strong class=''>Dailies:</strong>
+              <button type='submit' ng-click="editBoilerplate()" class='btn btn-default' ng-disabled='state == "submitting"' title='Edit dailies' style='margin-right: 3px;'><span class='glyphicon glyphicon-pencil'></span></button>
+              <button type='submit' ng-click="insertBoilerplate()" class='btn btn-black' ng-disabled='state == "submitting"' title='Insert dailies'><span class='glyphicon glyphicon-open'></span></button>
+            </h4>
+          </div>
+        </div>
+        <div ng-hide="showNextdayIntentions" class='col-md-6' ng-class='{"col-md-offset-3": user.todaySettings.hideBasicFormats}'>
+          <div class='intention-source-holder'>
+            <div class='past-notdones-box' ng-class='{expanded: showPastNotdones}' ng-show="flattenedNotdones">
+              <button class='btn btn-xs btn-danger' style='background: #d2857f; color: white' disabled ng-hide="flattenedNotdones.length" title='If you think there should be some, try refreshing the page.'>No recent NotDones</button>
+              <button class='btn btn-xs btn-danger' ng-show="flattenedNotdones.length && !showPastNotdones" ng-click="showPastNotdones = !showPastNotdones"><span class='glyphicon glyphicon-chevron-down'></span> Grab a recent NotDone</button>
+              <button class='btn btn-xs btn-danger' ng-show="flattenedNotdones.length && showPastNotdones" ng-click="showPastNotdones = !showPastNotdones"><span class='glyphicon glyphicon-chevron-up'></span> Hide NotDones</button>
+              <div class='past-notdones-holder' ng-show="showPastNotdones">
+                <div ng-repeat='item in flattenedNotdones' class='notdone item goal-{[{item.code}]}'>
+                  <button class='btn btn-sm' style='width: 20px; height: 20px; padding: 2px 5px;' ng-click="bugUserAboutNotdone(item, $index)">
+                    <span class='glyphicon glyphicon-arrow-down'></span>
+                  </button>
+                  &nbsp;
+                  <label for='notdone-check-$index' linkify>
+                    {[{item.code}]}{[{parens[item.daysNotdone]}]}
+                    {[{item.text}]}
+                  </label>
+                  <button class='btn btn-sm btn-trash' style='width: 20px; height: 20px; padding: 2px;' ng-click="destroyNotdone(item, $index)">
+                    <span class='glyphicon glyphicon-trash'></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='alerts-format'></div>
+          <div class='form-group' style='min-height: 160px'>
+            <div class='alert alert-info tip' data-tipcode="todayMakeCurrentIntentions" style='text-align:center'>
+              <div style='text-align:left'>
+                <p><span class='label label-info'>Tip</span> hold the <span class='cfp-hotkeys-key' style='font-size: 12px; position: relative; bottom: 2px'>shift &#x21e7;</span> key on your keyboard while you hit the submit button, and these intentions will be inserted as your next actions rather than at the bottom.</p>
+              </div>
+              <button type='button' style='margin:-10px -26px 0 0; float:right;' class='btn btn-sm btn-info' data-dismiss='alert'>this will be useful, thanks</button>
+            </div>
+
+            <colored-intentions id="todosCurrentday" focus-var="showsubmitmore" ng-model="intentionsToSubmit" fns='intentionBoxFns'></colored-intentions>
+          </div>
+          <div class='clearfix' style='margin: -8px 0 16px; position: relative;' ng-style="{'padding-bottom': outcomesOclock && !todolist.length ? '40px' : ''}">
+            <div class='pacman' style='float: right; margin: 5px' ng-show="state == 'submitting'"></div>
+            <button type='submit' ng-click="submitTodos($event)" ng-keydown="maybeSubmitTodos($event)" class='btn btn-success' ng-disabled='state == "submitting"' style='float:right'>Submit {[{dayofweek}]} intentions</button>
+            <span style='position: absolute; right: 0; top: 45px; z-index: 50;' ng-show="outcomesOclock && !todolist.length">
+              <button type='submit' ng-click="prepTodaysOutcomes(); g('button', 'toggle', 'outcomes')" class='btn btn-black'>Just submit outcomes</button>
+            </span>
+            <h4 class='dailies-container'>
+              <strong class=''>Dailies:</strong>
+              <button type='submit' ng-click="editBoilerplate()" class='btn btn-default' ng-disabled='state == "submitting"' title='Edit dailies' style='margin-right: 3px;'><span class='glyphicon glyphicon-pencil'></span></button>
+              <button type='submit' ng-click="insertBoilerplate()" class='btn btn-black' ng-disabled='state == "submitting"' title='Insert dailies'><span class='glyphicon glyphicon-open'></span></button>
+            </h4>
+          </div>
+          <div class='clearfix'></div>
+          <div class='hidden-md hidden-lg col-sm-6 col-xs-12 pull-right'>
+            <p ng-hide="user.todaySettings.hideBasicFormats" class='help-block'>
+            Try to come up with a list small enough you can confidently commit to, but large enough you'll feel proud if you held yourself accountable to them.
+            <span ng-hide="todolist.length">You can add more items later, but you can't remove them.</span> At the end of the day, you'll see how you did compared to your intentions.</p>
+            <div ng-hide="user.todaySettings.hideBasicFormats && !attnFormat" ng-class='attnFormat ? "attnFormat" : ""'>
+              <p ng-show="attnFormat" class='help-block'>This format's a little bit weird (eg. you end up with more than one of the same number) but trust me, it works well once you get used to it!</p>
+              <h3 style='margin-top:-3px'>Intention format:</h3>
+              <p class='format'>2) something for goal 2<br>
+                1) something for goal 1<br>
+                &amp;) miscellaneous todo<br>
+                2) another goal 2 todo<br>
+                etc
+              </p>
+            </div>
+                      </div>
+        </div>
+        <div class='clearfix'></div>
+        <div class='today-priorities-container'>
+          <h4 class='col-md-3 col-sm-3 col-xs-4' style='text-align: right'>
+            <span ng-show="sortedPriorities.length"><span ng-show="overduePriorities.length">Other </span>Top Priorities:</span>
+            <span ng-hide="sortedPriorities.length">Set a top priority...</span>
+          </h4>
+          <div class='col-md-9 col-sm-9 col-xs-8'>
+            <div ng-repeat="goal in sortedPriorities" class='goal-{[{goal.code}]} ccmbg today-priority'>
+              {[{goal.code}]}<span class='colon'>:</span> {[{goal.milestone.name}]} <span ng-show="goal.milestone.ymd">by {[{goal.milestone.ymd}]}</span>
+
+              <div class='milestone-button-placeholder'>
+              </div>
+              <div class='milestone-button-holder'>
+                <span class='milestone-button' title='Mark this priority as complete.' tabindex="{[{200+$index*10+1}]}" ng-click="milestoneComplete()"><span class='glyphicon glyphicon-ok'></span></span>
+                <span class='milestone-button milestone-button-bottom' title='Abandon this priority.' tabindex="{[{200+$index*10+2}]}" ng-click="milestoneAbandon()"><span class='glyphicon glyphicon-remove'></span></span>
+                <span class='milestone-button milestone-button-edit' title='Edit this priority.' tabindex="{[{200+$index*10+3}]}" ng-click="editPriorityModal(goal)"><span class='glyphicon glyphicon-pencil'></span></span>
+              </div>
+            </div>
+            <div class='clearfix'></div>
+            <div ng-repeat="goal in withoutPriorities" class='goal-{[{goal.code}]} ccmfg ccmbr today-priority-placeholder' ng-click="newPriorityModal(goal)" ng-class='{"ccwbg-h": !darktheme, "ccdbg-h": darktheme}'>
+              <span style='display: inline-block; min-width: 20px'>{[{goal.code}]}<span class='colon'>:</span></span>
+              <span class='glyphicon glyphicon-plus'></span>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div style='clear:both;' ng-show="fetched && outcomeHtml && !showsubmitmore" ng-cloak>
+      <form role='form' name='outcomesForm'>
+        <legend ng-show="!todaysOutcomesMode">Submit yesterday's outcomes &nbsp;
+          <button type='button' class='btn btn-default' id="submitjusttoday" ng-click="showsubmitmore = !showsubmitmore; g('button', 'toggle', 'intentions')" ng-hide="showsubmitmore || (!todolist.length && !outcomeHtml)" ng-cloak>
+            Just enter intentions for today
+          </button>
+        </legend>
+        <legend ng-show="todaysOutcomesMode">Submit today's outcomes &nbsp;
+          <button type='button' class='btn btn-default' id="canceloutcomesbtn" ng-click="hideOutcomes(); g('button', 'toggle', 'outcomes')" ng-hide="showsubmitmore || (!todolist.length && !outcomeHtml)" ng-cloak>
+            Cancel&mdash;there's more to do!
+          </button>
+        </legend>
+        <div class='col-md-6 '>
+          <p class='help-block'>Edit the text below to complete your outcomes. The items you didn't check off on your todo list have a <code>-</code> in front of them.</p>
+          <ul class='help-block'>
+            <li>Remove the <code>-</code> for items you successfully accomplished.</li>
+            <li>If you did an extra thing towards goal 2, type <code>+2) thing</code></li>
+            <li>Type "enough" or "not enough" or "nothing" after each <code>====</code> to indicate your sense of satisfaction with today's progress. <a href='http://blog.complice.co/post/112759679057/what-is-enough' target='_blank'>(read more &raquo;)</a></li>
+          </ul>
+          <div class='form-group'>
+
+
+            <htmlarea id="outcomesEditor" ng-model="outcomeHtml" class='htmlarea' contenteditable="true" focus-on="todaysOutcomesMode" nl-between-divs="true" onkeydown="outcomesTabber(event)"></htmlarea>
+          </div>
+          <button type='submit' ng-click="submitOutcomes()" class='btn btn-success' style='float:right' ng-disabled='state == "submitting"'>Submit {[{yesterdayofweek || dayofweek}]} outcomes</button>
+          <div class='pacman' style='float: right; margin: 5px' ng-show="state == 'submitting'"></div>
+
+        </div>
+        <div class='col-md-5 col-sm-8 col-xs-8'>
+          <div ng-class='attnFormat ? "attnFormat" : ""'>
+            <h3>Outcome format:</h3>
+            <p class='format'>1) something done for goal 1<br>
+              1==== enough<br>
+              1) something done for goal 1<br>
+              -1) something I <em>didn't</em> do for goal 2<br>
+              1==== not enough<br>
+              1) something done for goal 1<br>
+              +1) extra thing done for goal 1 that wasn't in intentions<br>
+              1==== enough!<br>
+              -1) goal 1 thing that didn't get done<br>
+              1==== nothing<br>
+              1==== day off<br>
+              &amp;) miscellaneous thing done<br>
+              etc
+            </p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='clearfix'></div>
+  <div style='height:80px;'></div>
+</div>
+
+
+
+<div class='modal fade goal-{[{modal.goal.code}]}' id="milestoneModal" tabindex="-1" role='dialog' aria-labelledby='milestoneModalLabel' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content' ng-class='{ccwbg: !darktheme, ccdbg: darktheme}'>
+      <div class='modal-header' ng-class='{ccmbg: !darktheme, ccbbg: darktheme, ccmfg: darktheme}' style='{[{darktheme ? "" : "color: white"}]}'>
+        <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Cancel</span></button>
+        <h4 class='modal-title' id="milestoneModalLabel">{[{modal.actionName}]} '{[{modal.goal.milestone.name}]}'</h4>
+      </div>
+      <div class='modal-body'>
+        <p class='large' ng-class='{ccdf: !darktheme, ccmfg: darktheme}' ng-show="modal.goal.milestone.spec"><span class='label' ng-class='{ccdbg: !darktheme, ccmbg: darktheme}'>Description:</span><br>
+        <span style='white-space: pre-wrap;' linkify>{[{modal.goal.milestone.spec}]}</span></p>
+        <p style='{[{darktheme ? "color: rgba(255,255,255,0.5)" : ""}]}' ng-show="modal.actionName === 'Complete'">Excellent! Did you learn anything useful from focusing on this priority?</p>
+        <p style='{[{darktheme ? "color: rgba(255,255,255,0.5)" : ""}]}' ng-show="modal.actionName === 'Abandon'">Sometimes you realize that what you thought was your top priority actually isn't. That's okay!</p>
+        <textarea class='form-control' name='milestoneRemarks' id="milestoneRemarks" style='min-height:60px;'
+        placeholder="Optional: {[{modal.actionName === 'Abandon' ? 'Why is this no longer top priority?' : 'Write a sentence or two...'}]}"
+        tabindex="11"></textarea>
+      </div>
+      <div class='modal-footer' ng-class='{ccmbg: !darktheme, ccbbg: darktheme}' style='position: relative'>
+        <span class='glyphicon glyphicon-calendar milestone-action-date-icon'></span>
+        <div class='milestone-action-date ccwfg'>
+          <div></div>
+          <span class='pull-left' ng-show="modal.goal.milestone.ymd"><label>Planned:&nbsp;</label> <span class='milestone-action-date-planned'>{[{modal.goal.milestone.ymd | date:'yyyy-MM-dd'}]}</span></span><br>
+          <span class='pull-left'><label ng-show="modal.goal.milestone.ymd">Actual:&nbsp;</label><label ng-hide="modal.goal.milestone.ymd">Date:&nbsp;</label></span>
+          <input type='text' class='form-control datepicker' id="milestoneActionDatepicker" value="{[{modal.todayYmd}]}"></input>
+        </div>
+        <span style='position: relative; top: 40px;'>
+          <button type='button' class='btn btn-default btn-sm' data-dismiss='modal' tabindex='15' ng-disabled="modal.submitting">Cancel</button>
+        </span>
+        <span style='display:inline-block; width: 30px'>&nbsp;</span>
+        <button tabindex='13' class='btn circle-pacman-button'
+          ng-keypress="modal.callback($event)"
+          ng-click="modal.callback()"
+          ng-class="{'pacman-mode': modal.submitting}"
+          >
+          <span class='btn-ok'>OK</span>
+          <span class='pacman' style='width: 100%; height: 100%;'></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='modal fade goal-{[{modal.goal.code}]} priority-editor' id="editPriorityModal" tabindex="-1" role='dialog' aria-labelledby='editPriorityModalLabel' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content' ng-class='{ccwbg: !darktheme, ccdbg: darktheme}'>
+      <div class='modal-header' ng-class='{ccmbg: !darktheme, ccbbg: darktheme, ccmfg: darktheme}' style='{[{darktheme ? "" : "color: white"}]}'>
+        <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Cancel</span></button>
+        <h4 class='modal-title' id="editPriorityModalLabel">What's your new top priority for {[{modal.goal.name || modal.priority.goalName}]}?</h4>
+      </div>
+      <div class='modal-body'>
+        <input class='form-control ccmfg new-milestone-name' name='editPriorityName' id="editPriorityName"
+        placeholder='type here'
+        tabindex="20" ng-model="modal.priority.name">
+        <textarea class='form-control' name='editPrioritySpec' id="editPrioritySpec" style='min-height:60px; margin-top: 10px'
+        ng-class='{ccmfg: darktheme}'
+        ng-show="modal.priority.name"
+        ng-model="modal.priority.spec"
+        placeholder="Use this box to describe the priority named above. What's success? What's not needed?"
+        tabindex="21"></textarea>
+      </div>
+      <div class='modal-footer' ng-class='{ccmbg: !darktheme, ccbbg: darktheme, ccmfg: darktheme}' style='position: relative'>
+        <span class='glyphicon glyphicon-calendar milestone-action-date-icon' style='top: 20px; left: 20px;'></span>
+        <div class='milestone-action-date ccwfg' style='margin: 0'>
+          <div></div>
+          <span class='pull-left'><label>Date:&nbsp;</label></span>
+          <input type='text' class='form-control datepicker' tabindex="22"
+                 title="You'll get a reminder about this priority on this date"
+                id="editPriorityDatepicker" ng-model="modal.priority.ymd"></input>
+        </div>
+        <span style='position: relative; top: 10px;'>
+          <button type='button' class='btn btn-default btn-sm' data-dismiss='modal' tabindex='25' ng-disabled="modal.submitting">Cancel</button>
+        </span>
+        <span style='display:inline-block; width: 30px'>&nbsp;</span>
+        <button tabindex="23" class='btn circle-pacman-button'
+          ng-keypress="modal.callback($event)"
+          ng-click="modal.callback()"
+          ng-class="{'pacman-mode': modal.submitting}"
+          >
+          <span class='btn-ok'>OK</span>
+          <span class='pacman' style='width: 100%; height: 100%;'></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='modal fade modal-dark' id="boilerplateModal" tabindex="-1" role='dialog' aria-labelledby='boilerplateModalLabel' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header' style='color: white'>
+        <button type='button' class='close' style='color: #fff' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Cancel</span></button>
+        <h4 class='modal-title' id="boilerplateModalLabel">Dailies: draft some default intentions for every day</h4>
+      </div>
+      <div class='modal-body" style='position: relative'>
+        <!--
+        <textarea class='form-control' name='editDailyBoilerplate' id="editDailyBoilerplate" style='min-height:60px; margin-top: 10px'
+        ng-model="user.todaySettings.boilerplate.daily"
+        ng-model-options="{ updateOn: 'default blur', debounce: {'default': 2000, 'blur': 0} }"
+        placeholder='draft your daily intentions here'
+        tabindex="21"></textarea>
+        -->
+        <colored-intentions ng-model="user.todaySettings.boilerplate.daily"></colored-intentions>
+      </div>
+      <div class='modal-footer' style='position: relative'>
+        <div class='actionStatus'>
+          <em ng-show="modal.status == 'editing'">editing...</em>
+          <em ng-show="modal.status == 'saving'">saving...</em>
+          <span ng-show="modal.status == 'saved'">saved <span class='glyphicon glyphicon-ok'></span></span>
+          <span ng-show="modal.status == 'error'">error: {[{modal.error}]}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='modal fade' id="itemModal" tabindex='-1' role='dialog' aria-labelledby='boilerplateModalLabel' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-body'>
+        <strong class='modal-item ccmfg goal-{[{itemModal.item.code}]}'>{[{itemModal.item.text}]}</strong>
+        <ul class='item-menu-list'>
+          <li ng-hide="itemModal.item.nevermind" ng-click="itemModal.hide(); toggleNevermind(itemModal.item)">
+            <span class='glyphicon glyphicon-remove'></span>
+            &nbsp;&nbsp;
+            Nevermind
+          </li>
+          <li ng-show="itemModal.item.nevermind" ng-click="itemModal.hide(); toggleNevermind(itemModal.item)">
+            <span class='glyphicon glyphicon-remove'></span>
+            &nbsp;&nbsp;
+            <em>Un</em>-nevermind
+          </li>
+          <li ng-click="itemModal.hide(); performAppend(itemModal.item)">
+            <span class='glyphicon glyphicon-italic'></span>
+            &nbsp;&nbsp;
+            Append text
+          </li>
+          <li ng-show="itemModal.item.pomosDone" ng-click="itemModal.hide(); unassignPomo(itemModal.ix)"><a class='add-pomo'><span>&minus;</span><img src='https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png' style='width:16px; height:16px; margin:-3px 0 0 2px; opacity: 0.5' /></a>
+            &nbsp;&nbsp;
+            Unassign pomodoro
+          </li>
+          <li ng-click="itemModal.hide(); toggleStar(itemModal.item)">
+            <span class='glyphicon glyphicon-star'></span>
+            &nbsp;&nbsp;
+            Toggle item star
+          </li>
+        </ul>
+      </div>
+      <!--
+      <div class='modal-footer' style='position: relative'>
+        <div class='actionStatus'>
+          <em ng-show="modal.status == 'editing'">editing...</em>
+          <em ng-show="modal.status == 'saving'">saving...</em>
+          <span ng-show="modal.status == 'saved'">saved <span class='glyphicon glyphicon-ok'></span></span>
+          <span ng-show="modal.status == 'error'">error: {[{modal.error}]}</span>
+        </div>
+      </div>
+      -->
+    </div>
+  </div>
+</div>
+
+
+<div class='modal fade' id="settingsModal" tabindex="-1" role='dialog' aria-labelledby='settingsModalLabel' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal'><span aria-hidden='true'>&times;</span><span class='sr-only'>Cancel</span></button>
+        <h4 class='modal-title' id="settingsModalLabel">Today page settings &nbsp; <span class='unwrap'>(<a href="/Fivapr/settings/" target='_blank'>see all settings</a>)</span></h4>
+      </div>
+      <div class='modal-body form-horizontal'>
+        <ul class='nav nav-tabs nav-tabs-better'>
+          <li ng-class='{active: settingsMode == "pomodoro"}' role='presentation'>
+              <a class='hover-pointer' ng-click="settingsMode = 'pomodoro'">Pomodoro</a>
+          </li>
+          <li ng-class='{active: settingsMode == "view"}' role='presentation'>
+              <a class='hover-pointer' ng-click="settingsMode = 'view'">View</a>
+          </li>
+          <li ng-class='{active: settingsMode == "room"}' role='presentation'>
+              <a class='hover-pointer' ng-click="settingsMode = 'room'">Rooms</a>
+          </li>
+        </ul>
+        <br>
+        <div ng-show="settingsMode == 'pomodoro'">
+          <div class='form-group' style='margin-bottom: 0'>
+            <label class='col-md-4 col-xs-4 control-label' for='pomoTime'>Work time</label>
+            <div class='col-md-2 col-xs-2 controls'>
+              <input type='text' id="pomoTime" name='pomoTime' placeholder='mins' class='form-control form-control-tiny' ng-keydown="forceNumber($event)" ng-model="user.todaySettings.pomoTime">
+            </div>
+            <div class='col-md-5 col-xs-6' style='overflow: visible; height: 10px; padding-top:12px'>
+              &laquo;&nbsp;
+              <button class='btn btn-default' ng-click="user.todaySettings.pomoTime = 25; user.todaySettings.breakTime = 5; g('button', 'apply-pomoTime', '25')">25<br>5</button>
+              <button class='btn btn-default' ng-click="user.todaySettings.pomoTime = 32; user.todaySettings.breakTime = 8; g('button', 'apply-pomoTime', '32')">32<br>8</button>
+              <button class='btn btn-default' ng-click="user.todaySettings.pomoTime = 50; user.todaySettings.breakTime = 10; g('button', 'apply-pomoTime', '50')">50<br>10</button>
+            </div>
+          </div>
+          <div class='form-group' style='margin-bottom: 10px'>
+            <label class='col-md-4 col-xs-4 control-label' for='breakTime'>Break time</label>
+            <div class='col-md-2 col-xs-2 controls'>
+              <input type='text' id="breakTime" name='breakTime' placeholder='mins' class='form-control form-control-tiny' ng-keydown="forceNumber($event)" ng-model="user.todaySettings.breakTime">
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-4 col-xs-4 control-label'>
+              <input type='checkbox' style='width:24px; display: inline-block; margin: 0 4px' class='form-control' name='longBreakEnabled' id="longBreakEnabled" ng-model="user.todaySettings.longBreakEnabled">
+              <label for='longBreakEnabled'>LongBreak</label>
+            </div>
+            <div class='col-md-8 col-xs-8 controls' style='padding: 3px 0'>
+              <input type='text' id="longBreakDuration" name='longBreakDuration' placeholder='mins' class='form-control form-control-tiny' style='display: inline-block; width: 65px; margin: 0 5px' ng-keydown="forceNumber($event)" ng-model="user.todaySettings.longBreakDuration" ng-disabled="!user.todaySettings.longBreakEnabled" >
+              <span style='display:inline-block; padding-top:0px'>minutes every</span>
+              <input type='text' class='form-control form-control-tiny' ng-keydown="forceNumber($event)" ng-model="user.todaySettings.longBreakInterval" style='display: inline-block; width: 65px; margin: 0 5px' ng-disabled="!user.todaySettings.longBreakEnabled" >
+              <span style='display:inline-block; padding-top:0px'>pomos</span>
+            </div>
+          </div>
+          <div class='form-group'>
+            <div class='col-md-3 col-xs-5 text-right'>
+              <label class='control-label' for='dingVolume'>Ding Volume</label><br>
+              <br>
+              <label class='control-label'>Sound</label><br>
+              <br>
+              <label class='control-label' for='tickVolume'>Ticking Volume</label><br>
+            </div>
+
+            <div class='controls col-xs-7' style='display: inline-block; padding-top: 8px'>
+              <input
+              id="dingVolume" name='dingVolume'
+              ng-model="user.todaySettings.dingVolume"
+              ng-change="g('change', 'settings', 'ding-volume')"
+              type='range' min="0" step="0.01" max="1"
+              style='width:100%' />
+              <div style='position: relative; top: 5px' class='timer-sound-buttons'>
+                <button class='btn btn-default' ng-click="user.todaySettings.dingSoundPath = '/audio/owl.mp3'" ng-class='{active: user.todaySettings.dingSoundPath === "/audio/owl.mp3"}'>Alarm</button>
+                <button class='btn btn-default' ng-click="user.todaySettings.dingSoundPath = '/audio/horns.mp3'" ng-class='{active: user.todaySettings.dingSoundPath === "/audio/horns.mp3"}'>Horns</button>
+                <button class='btn btn-default' ng-click="user.todaySettings.dingSoundPath = '/audio/bell.mp3'" ng-class='{active: user.todaySettings.dingSoundPath === "/audio/bell.mp3"}'>Bell</button>
+                <button class='btn btn-default' ng-click="user.todaySettings.dingSoundPath = '/audio/toaster.mp3'" ng-class='{active: user.todaySettings.dingSoundPath === "/audio/toaster.mp3"}'>Toaster</button>
+              </div>
+              <input
+              id="tickVolume" name='tickVolume'
+              ng-model="user.todaySettings.tickVolume"
+              ng-change="g('change', 'settings', 'tick-volume')"
+              type='range' min="0" step="0.01" max="1"
+              style='width:100%; margin-top: 20px;' />
+            </div>
+            <button style='float:right; margin: 14px 26px 0 0' ng-click="playSound(); g('button', 'settings', 'test-sound')" class='btn btn-default' ng-disabled="user.todaySettings.dingVolume <= 0.05">test&nbsp; <span class='glyphicon glyphicon-volume-up' ng-show="user.todaySettings.dingVolume > 0.05"></span><span class='glyphicon glyphicon-volume-off' ng-show="user.todaySettings.dingVolume <= 0.05"></span></button>
+          </div>
+
+          <div class='form-group' ng-cloak>
+            <div class='col-md-6 col-xs-6 text-right'>
+              <label class='control-label' for='desktopNotifications'>Desktop Notifications</label>
+            </div>
+            <div class='col-md-1 col-xs-1 controls'>
+              <input type='checkbox' style='width:24px' class='form-control' ng-model="user.todaySettings.desktopNotifications" name='desktopNotifications'>
+            </div>
+            <div class='clearfix col-md-10 col-md-offset-1 col-xs-12' ng-show="user.todaySettings.desktopNotifications && notificationsNotSupported">
+              <p class='help-block'>
+                Your browser does not support desktop notifications.
+              </p>
+            </div>
+            <div class='clearfix col-md-10 col-md-offset-1 col-xs-12' ng-show="user.todaySettings.desktopNotifications && notificationPermDenied">
+              <p class='help-block'>
+                You appear to have blocked notifications from Complice in this browser.<br>
+                Follow the instructions for your browser below to enable them, then uncheck and recheck the box above.
+              </p>
+              <ul ng-show="user.todaySettings.desktopNotifications && notificationPermDenied">
+              <li><a href="http://www.ericfeminella.com/blog/2013/12/03/clearing-web-notifications-permissions-in-chrome/" target='_blank'>Google Chrome</a></li>
+              <li><a href="https://support.mozilla.org/en-US/questions/997362" target='_blank'>Firefox</a></li>
+              <li><a href="http://www.tekrevue.com/tip/safari-push-notifications/" target='_blank'>Safari</a></li>
+              </ul>
+            </div>
+            <button style='float:right; margin: 14px 26px 0 0' ng-click="testNotification(); g('button', 'settings', 'test-notification')" class='btn btn-default'>test&nbsp; <span class='glyphicon glyphicon glyphicon-bullhorn'></span></button>
+          </div>
+
+        </div>
+        <div ng-show="settingsMode == 'view'">
+          <div class='form-group'>
+            <label class='col-md-6 col-xs-6 control-label' for='hideDoneItemsByDefault'>Hide completed tasks by default</label>
+            <div class='col-md-1 col-xs-1 controls'>
+              <input type='checkbox' style='width:24px' class='form-control' ng-model="user.todaySettings.hideDoneItemsByDefault" name='hideDoneItemsByDefault'>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-md-6 col-xs-6 control-label' for='darkThemeByDefault'>Dark Theme on by default</label>
+            <div class='col-md-6 col-xs-6 controls'>
+
+              <div>
+                <a class='btn btn-xs btn-stoplight btn-stoplight-red'
+                   ng-disabled="user.todaySettings.darkThemeByDefault === 'never'"
+                   ng-click="user.todaySettings.darkThemeByDefault = 'never'">never</a>
+                <a class='btn btn-xs btn-stoplight btn-stoplight-amber'
+                   ng-disabled="user.todaySettings.darkThemeByDefault === 'sometimes'"
+                   ng-click="user.todaySettings.darkThemeByDefault = 'sometimes'">sometimes</a>
+                <a class='btn btn-xs btn-stoplight btn-stoplight-green'
+                   ng-disabled="user.todaySettings.darkThemeByDefault === 'always'"
+                   ng-click="user.todaySettings.darkThemeByDefault = 'always'">always</a>
+              </div>
+              <div ng-show="user.todaySettings.darkThemeByDefault === 'sometimes'" style='padding: 5px'>
+                <select class='form-control' style='width: 100px; display: inline-block;'
+                ng-model="user.todaySettings.darkThemeHours[0]">
+                  <option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option>                </select>
+                <select class='form-control' style='width: 100px; display: inline-block;'
+                ng-model="user.todaySettings.darkThemeHours[1]">
+                  <option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option>                </select>
+              </div>
+            </div>
+            <div class='clearfix col-md-12 col-xs-12'>
+              <p class='help-block'>
+              Less taxing on eyes at night. Press <span class='cfp-hotkeys-key'>shift</span>+ <span class='cfp-hotkeys-key'>f</span> to toggle the dark theme.</p>
+            </div>
+          </div>
+          <div class='form-group'>
+            <label class='col-md-6 col-xs-6 control-label' for='distractionFreeByDefault'>Distraction-Free Mode on by default</label>
+            <div class='col-md-1 col-xs-1 controls'>
+              <input type='checkbox' style='width:24px' class='form-control' ng-model="user.todaySettings.distractionFreeByDefault" name='distractionFreeByDefault'>
+            </div>
+            <div class='clearfix col-md-12 col-xs-12'>
+              <p class='help-block'>
+              Hides top bar and other stuff. Press <span class='cfp-hotkeys-key'>f</span> to toggle distraction-free mode.</p>
+              <p class='help-block' ng-show="user.todaySettings.distractionFreeByDefault"><strong>Note!</strong> Some buttons are hidden in distraction-free mode, so you'll want to know some hotkeys, such as <span class='cfp-hotkeys-key'>i</span> to enter extra intentions. Press <span class='cfp-hotkeys-key'>?</span> to view hotkeys.</p>
+            </div>
+          </div>
+        </div>
+        <div ng-show="settingsMode == 'room'">
+          <div class='form-group' style='padding-left: 8px; padding-right: 8px'>
+            <label class='col-md-6 col-xs-6 control-label' for='handle' style='position: relative; top: 4px'>Custom room handle</label>
+            <div class='col-md-6 col-xs-6 controls'>
+              <input type='text' class='form-control' ng-model="user.roomSettings.handle" name='handle' id="handle">
+            </div>
+            <div class='clearfix col-md-12 col-xs-12'>
+              <p class='help-block'>If you have a common name, pick something else for people to know you by in the rooms.</p>
+            </div>
+          </div>
+          <div class='form-group' style='padding-left: 8px; padding-right: 8px'>
+            <label class='col-md-6 col-xs-6 control-label' for='sharePrivateTasks'>Share my current action in rooms, even if it's otherwise private</label>
+            <div class='col-md-1 col-xs-1 controls'>
+              <input type='checkbox' style='width:24px' class='form-control' ng-model="user.roomSettings.sharePrivateTasks" name='sharePrivateTasks' id="sharePrivateTasks">
+            </div>
+            <div class='clearfix col-md-12 col-xs-12'>
+              <p class='help-block'>If unchecked, if you're working on a task for a non-public goal, users who don't have permission will see "(this action not shown)" in the user list. We recommend checking this box, but it's unchecked by default for security reasons.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='modal-footer'>
+        <span class='small' class='actionStatus'>{[{modal.status}]}</span>
+        <button type='button' class='btn btn-default' data-dismiss='modal'>Cancel</button>
+        <button type='button' class='btn btn-success' ng-disabled="modal.processing" ng-click="updateSettings()">
+          Update Settings
+        </button>
+        <div class='pacman' style='opacity: 0'></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var localData = {
+    roomslug: "",
+    subroom: "",
+    perm: !!"true", // that way undefined becomes !!"" which is false
+
+
+
+  };
+</script>
+
+
+
+  </div>
+
+  <div class='footer navbar navbar-default navbar-bottom'>
+    <div class='container'>
+      <div class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
+        <div class='navbar-header navbar-right'>
+          <a class='navbar-brand' rel="home" href="/?s">
+            <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+          </a>
+        </div>
+          <ul class='nav navbar-nav'>
+            <li class=''><a href="/about">About</a></li>
+            <li class=''><a href="/faq">FAQ</a></li>
+            <li class=''><a href="/features">Features</a></li>
+            <li class=''><a href="/newsletter">Newsletter</a></li>
+            <li><a href="http://blog.complice.co">Blog</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="/Fivapr/data.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/sweetalert.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tinycolor/1.0.0/tinycolor.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.tpl.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/hotkeys.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/moment.min.js"></script>
+        <script src="/js/complicemon.js" type='text/javascript'></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/sortable.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/angular-contenteditable.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/alt-linkify.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/bootstrap-datepicker.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/favcount.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/angular-loading-bar.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/trello-clipboard.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/today.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/priority-editor.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/colored-intentions.js"></script>
+
+
+
+        <script> var intercomSettings = {"name":"Fivapr","email":"270696@mail.ru","user_id":"Fivapr","app_id":"uie8xb07"}</script>
+        <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uie8xb07';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+    <div class='checkpath-container-container'>
+      <svg class='checkpath-container' pointer-events='none' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+        <path id="checkpath" class='ccdfl checkpath' d="M 50 0 L 60 10 L 20 50 L 0 30 L 10 20 L 20 30 Z"/>
+      </svg>
+    </div>
+  </body>
+</html>

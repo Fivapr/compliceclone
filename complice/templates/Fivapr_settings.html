@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta property="og:title" content="Complice &mdash; focus on what's important" />
+    <meta property="og:description" content="Make more progress on your goals." />
+    <meta property="og:image" content="https://complice.co/img/product-overview-2.png" />
+    <meta property="og:logo" content="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+
+    <meta name='theme-color' content="#9600FF">
+    <link rel="manifest" href="/manifest.json">
+    <meta name='mobile-web-app-capable' content="yes">
+    <meta name='apple-mobile-web-app-capable' content="yes">
+    <meta name='viewport' content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type='text/css' href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/sweetalert.css">
+    <link href="https://complicemail-herokuapp-com.global.ssl.fastly.net/css/hotkeys.min.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/bootstrap/css/flat-ui.css">
+    <link rel="icon" sizes="192x192" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-192x192.png">
+    <link rel="icon" sizes="160x160" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-160x160.png">
+    <link rel="icon" sizes="96x96" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-96x96.png">
+    <link rel="icon" sizes="32x32" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/apple-touch-icon-152x152.png">
+    <meta name='apple-mobile-web-app-title' content="Complice">
+    <meta name='msapplication-TileColor' content="#9f00a7">
+    <meta name='msapplication-TileImage' content="/mstile-144x144.png">
+    <meta name='application-name' content="Complice">
+    <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/card/0.0.2/css/card.min.css" />
+    <link rel="stylesheet" href="https://complicemail-herokuapp-com.global.ssl.fastly.net/style.css">
+    <link rel="stylesheet" media="all" id="usercss" href="/Fivapr/user.css?v=6">
+    <title>Settings &middot; Complice</title>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51007115-2', 'complice.co');
+      ga('require', 'displayfeatures');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+
+      var g = function (category, action, label) {
+        ga('send', 'event', category, action, label);
+      }
+      //
+
+    </script>
+        <meta name='description' content="Complice helps people achieve their personal and professional goals, by making consistent progress every day.">
+  </head>
+  <body ng-app="complice" class='  '>
+    <div class='allexceptfooter aef-static-navbar' >
+  <div class='navbar navbar-inverse navbar-fixed-top navbar-small-text' role='navigation'>
+    <div class='container'>
+      <div class='navbar-header'>
+        <button type='button' class='navbar-toggle' data-toggle="collapse" data-target=".navbar-collapse" style='padding: 18px;'>
+          <span class='sr-only'>Toggle navigation</span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+          <span class='icon-bar'></span>
+        </button>
+        <a class='navbar-brand' rel="home" href="/?s">
+          <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_dark_trans.png">
+          <span
+          class='hidden-sm-inline'
+          >Complice</span>
+        </a>
+      </div>
+      <div class='navbar-collapse collapse'>
+        <ul class='nav navbar-nav' >
+          <li class=''><a href="/Fivapr/">Timeline</a></li>
+
+          <li class='dropdown incomplete-bother incomplete-bother-angular' ng-cloak ng-show='recentIncompleteEntries.length'>
+            <a href="#" class='dropdown-toggle' data-toggle="dropdown" title='{[{recentIncompleteEntries.length}]} recent incomplete entries'>
+              <span class='nav-bother n-{[{recentIncompleteEntries.length}]}'>
+                {[{recentIncompleteEntries.length}]}
+              </span>
+            </a>
+            <ul class='dropdown-menu'>
+              <li ng-repeat='ymd in recentIncompleteEntries'><a ng-href="/Fivapr/#header-{[{ymd}]}">Submit outcomes for {[{ymd}]}</a></li>
+            </ul>
+          </li>
+          <li class='nav-today-link '><a href="/Fivapr/today">Today
+            <span class='notdonesOnOtherPages'>
+              (1)
+            </span>
+            <span id="navnotdone" class='ng-cloak'>
+              {[{remainingcount ? ' (' + remainingcount + ')' : ''}]}
+            </span>
+          </a>
+
+          <div class='click-on-today-arrow'>
+            <span class='glyphicon glyphicon-arrow-up'></span>
+          </div>
+
+          </li>
+          <li class=''><a href="/Fivapr/goals">Goals</a></li>
+          <li class=''><a href="/Fivapr/reviews/">Reviews</a></li>
+          <li class=''><a href="/rooms">Rooms</a></li>
+        </ul>
+        <ul class='nav navbar-nav navbar-right'>
+            <li id="partnerReq"
+            style='display:none;'
+            >
+              <span><a class='btn btn-primary' style='margin-top:9px; padding: 5px; height: 32px;' href="/Fivapr/settings#partner" title='Click to view request'>
+              <span class='glyphicon glyphicon-plus'></span>
+              <span class='glyphicon glyphicon-user'></span>
+              <span class='hidden-md-inline hidden-sm-inline hidden-xs-inline'>Partner request from</span>
+              REQUESTFROMUSERNAME
+              </a></span>
+            </li>
+                <li style='margin: 2px 8px;'><span><a class='btn btn-danger' style='margin-top:4px; padding: 3px; height: 41px; font-size: 12px; ' href="/Fivapr/settings#payment">
+                  <span style='background: white; padding: 2px ; color: #d9534f; display: inline-block; border-radius:2px; text-shadow:none; float:left; margin-bottom: -4px;' id="daysRemaining">
+                  &nbsp;<span id="daysRemaining-N">8</span>
+                  day<span class='hide-if-one-8' id="daysRemaining-S">s</span>
+                  <span class='hidden-sm-inline'> remaining</span>&nbsp;
+                  </span><br>
+                  <span style='display: inline-block; margin-top: 6px'><span class='hidden-sm-inline'>Upgrade </span><span class='glyphicon glyphicon-plus-sign'></span></span></a></span>
+                </li>
+
+                          <li class='dropdown'>
+              <a href="#" class='dropdown-toggle' data-toggle="dropdown">Fivapr <b class='caret'></b></a>
+              <ul class='dropdown-menu'>
+                <li><a href="/Fivapr/settings">Settings</a></li>
+                <li><a href="/Fivapr/refer">Refer Friends</a></li>
+                <li><a href="/logout">Log out</a></li>
+              </ul>
+            </li>
+
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </div>
+<div class='container container-settings' ng-controller="SettingsCtrl">
+  <h2>Complice settings for Fivapr</h2>
+  <div class='row row-alerts' id="alertbar">
+  </div>
+  <div class='row' ng-cloak>
+    <ul class='nav nav-tabs nav-tabs-better'>
+      <li class='active'><a href='#email' data-toggle='tab'>Email</a></li>
+      <li><a href='#password' data-toggle='tab'>Password</a></li>
+      <li><a href='#payment' data-toggle='tab'>Payment</a></li>
+      <li><a href='#partner' data-toggle='tab'>Accountability Partner</a></li>
+      <li><a href='#apps' data-toggle='tab'>Apps</a></li>
+    </ul>
+    <div class='tab-content'>
+      <div class='tab-pane active' id='email'>
+        <form id="settings_email" name='emailForm' role='form' action="/Fivapr/settings?email" method="post" class='form-horizontal'>
+          <h3>Account</h3>
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='name'>First name</label>
+            <div class='col-md-6'>
+              <input type='text' value="Fivapr" name='name' class='form-control' />
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='rawEmail'>Email address</label>
+            <div class='col-md-6'>
+              <input type='email' value="270696@mail.ru" name='rawEmail' class='form-control' />
+              <p class='help-block'>Email address will not be publicly displayed but may be used to allow your friends to find you.</p>
+            </div>
+          </div>
+
+
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='timezone'>Timezone</label>
+            <div class='col-md-6'>
+              <div class='col-md-10'>
+                <select id="timezoneselect" name='timezone' class='required form-control'>
+                  <option value="Pacific/Honolulu">Pacific/Honolulu</option><option value="America/Anchorage">America/Anchorage</option><option value="America/Los_Angeles">America/Los_Angeles</option><option value="America/Phoenix">America/Phoenix</option><option value="America/Denver">America/Denver</option><option value="America/Indiana/Indianapolis">America/Indiana/Indianapolis</option><option value="America/Chicago">America/Chicago</option><option value="America/New_York">America/New_York</option><option disabled="disabled" value="">&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;</option><option value="Africa/Abidjan">Africa/Abidjan</option><option value="Africa/Accra">Africa/Accra</option><option value="Africa/Addis_Ababa">Africa/Addis_Ababa</option><option value="Africa/Algiers">Africa/Algiers</option><option value="Africa/Asmara">Africa/Asmara</option><option value="Africa/Bamako">Africa/Bamako</option><option value="Africa/Bangui">Africa/Bangui</option><option value="Africa/Banjul">Africa/Banjul</option><option value="Africa/Bissau">Africa/Bissau</option><option value="Africa/Blantyre">Africa/Blantyre</option><option value="Africa/Brazzaville">Africa/Brazzaville</option><option value="Africa/Bujumbura">Africa/Bujumbura</option><option value="Africa/Cairo">Africa/Cairo</option><option value="Africa/Casablanca">Africa/Casablanca</option><option value="Africa/Ceuta">Africa/Ceuta</option><option value="Africa/Conakry">Africa/Conakry</option><option value="Africa/Dakar">Africa/Dakar</option><option value="Africa/Dar_es_Salaam">Africa/Dar_es_Salaam</option><option value="Africa/Djibouti">Africa/Djibouti</option><option value="Africa/Douala">Africa/Douala</option><option value="Africa/El_Aaiun">Africa/El_Aaiun</option><option value="Africa/Freetown">Africa/Freetown</option><option value="Africa/Gaborone">Africa/Gaborone</option><option value="Africa/Harare">Africa/Harare</option><option value="Africa/Johannesburg">Africa/Johannesburg</option><option value="Africa/Juba">Africa/Juba</option><option value="Africa/Kampala">Africa/Kampala</option><option value="Africa/Khartoum">Africa/Khartoum</option><option value="Africa/Kigali">Africa/Kigali</option><option value="Africa/Kinshasa">Africa/Kinshasa</option><option value="Africa/Lagos">Africa/Lagos</option><option value="Africa/Libreville">Africa/Libreville</option><option value="Africa/Lome">Africa/Lome</option><option value="Africa/Luanda">Africa/Luanda</option>
+          <option value="Africa/Lubumbashi">Africa/Lubumbashi</option><option value="Africa/Lusaka">Africa/Lusaka</option><option value="Africa/Malabo">Africa/Malabo</option><option value="Africa/Maputo">Africa/Maputo</option><option value="Africa/Maseru">Africa/Maseru</option><option value="Africa/Mbabane">Africa/Mbabane</option><option value="Africa/Mogadishu">Africa/Mogadishu</option><option value="Africa/Monrovia">Africa/Monrovia</option><option value="Africa/Nairobi">Africa/Nairobi</option><option value="Africa/Ndjamena">Africa/Ndjamena</option><option value="Africa/Niamey">Africa/Niamey</option><option value="Africa/Nouakchott">Africa/Nouakchott</option><option value="Africa/Ouagadougou">Africa/Ouagadougou</option><option value="Africa/Porto-Novo">Africa/Porto-Novo</option><option value="Africa/Sao_Tome">Africa/Sao_Tome</option><option value="Africa/Tripoli">Africa/Tripoli</option><option value="Africa/Tunis">Africa/Tunis</option><option value="Africa/Windhoek">Africa/Windhoek</option><option value="America/Adak">America/Adak</option><option value="America/Anchorage">America/Anchorage</option><option value="America/Anguilla">America/Anguilla</option><option value="America/Antigua">America/Antigua</option><option value="America/Araguaina">America/Araguaina</option><option value="America/Argentina/Buenos_Aires">America/Argentina/Buenos_Aires</option><option value="America/Argentina/Catamarca">America/Argentina/Catamarca</option><option value="America/Argentina/Cordoba">America/Argentina/Cordoba</option><option value="America/Argentina/Jujuy">America/Argentina/Jujuy</option><option value="America/Argentina/La_Rioja">America/Argentina/La_Rioja</option><option value="America/Argentina/Mendoza">America/Argentina/Mendoza</option><option value="America/Argentina/Rio_Gallegos">America/Argentina/Rio_Gallegos</option><option value="America/Argentina/Salta">America/Argentina/Salta</option><option value="America/Argentina/San_Juan">America/Argentina/San_Juan</option><option value="America/Argentina/San_Luis">America/Argentina/San_Luis</option><option value="America/Argentina/Tucuman">America/Argentina/Tucuman</option><option value="America/Argentina/Ushuaia">America/Argentina/Ushuaia</option><option value="America/Aruba">America/Aruba</option><option value="America/Asuncion">America/Asuncion</option><option value="America/Atikokan">America/Atikokan</option><option value="America/Bahia">America/Bahia</option><option value="America/Bahia_Banderas">America/Bahia_Banderas</option><option value="America/Barbados">America/Barbados</option><option value="America/Belem">America/Belem</option>
+          <option value="America/Belize">America/Belize</option><option value="America/Blanc-Sablon">America/Blanc-Sablon</option><option value="America/Boa_Vista">America/Boa_Vista</option><option value="America/Bogota">America/Bogota</option><option value="America/Boise">America/Boise</option><option value="America/Cambridge_Bay">America/Cambridge_Bay</option><option value="America/Campo_Grande">America/Campo_Grande</option><option value="America/Cancun">America/Cancun</option><option value="America/Caracas">America/Caracas</option><option value="America/Cayenne">America/Cayenne</option><option value="America/Cayman">America/Cayman</option><option value="America/Chicago">America/Chicago</option><option value="America/Chihuahua">America/Chihuahua</option><option value="America/Costa_Rica">America/Costa_Rica</option><option value="America/Creston">America/Creston</option><option value="America/Cuiaba">America/Cuiaba</option><option value="America/Curacao">America/Curacao</option><option value="America/Danmarkshavn">America/Danmarkshavn</option><option value="America/Dawson">America/Dawson</option><option value="America/Dawson_Creek">America/Dawson_Creek</option><option value="America/Denver">America/Denver</option><option value="America/Detroit">America/Detroit</option><option value="America/Dominica">America/Dominica</option><option value="America/Edmonton">America/Edmonton</option><option value="America/Eirunepe">America/Eirunepe</option><option value="America/El_Salvador">America/El_Salvador</option><option value="America/Fortaleza">America/Fortaleza</option><option value="America/Glace_Bay">America/Glace_Bay</option><option value="America/Godthab">America/Godthab</option><option value="America/Goose_Bay">America/Goose_Bay</option><option value="America/Grand_Turk">America/Grand_Turk</option><option value="America/Grenada">America/Grenada</option><option value="America/Guadeloupe">America/Guadeloupe</option><option value="America/Guatemala">America/Guatemala</option><option value="America/Guayaquil">America/Guayaquil</option><option value="America/Guyana">America/Guyana</option><option value="America/Halifax">America/Halifax</option><option value="America/Havana">America/Havana</option><option value="America/Hermosillo">America/Hermosillo</option><option value="America/Indiana/Indianapolis">America/Indiana/Indianapolis</option><option value="America/Indiana/Knox">America/Indiana/Knox</option><option value="America/Indiana/Marengo">America/Indiana/Marengo</option><option value="America/Indiana/Petersburg">America/Indiana/Petersburg</option><option value="America/Indiana/Tell_City">America/Indiana/Tell_City</option><option value="America/Indiana/Vevay">America/Indiana/Vevay</option><option value="America/Indiana/Vincennes">America/Indiana/Vincennes</option>
+          <option value="America/Indiana/Winamac">America/Indiana/Winamac</option><option value="America/Inuvik">America/Inuvik</option><option value="America/Iqaluit">America/Iqaluit</option><option value="America/Jamaica">America/Jamaica</option><option value="America/Juneau">America/Juneau</option><option value="America/Kentucky/Louisville">America/Kentucky/Louisville</option><option value="America/Kentucky/Monticello">America/Kentucky/Monticello</option><option value="America/La_Paz">America/La_Paz</option><option value="America/Lima">America/Lima</option><option value="America/Los_Angeles">America/Los_Angeles</option><option value="America/Maceio">America/Maceio</option><option value="America/Managua">America/Managua</option><option value="America/Manaus">America/Manaus</option><option value="America/Martinique">America/Martinique</option><option value="America/Matamoros">America/Matamoros</option><option value="America/Mazatlan">America/Mazatlan</option><option value="America/Menominee">America/Menominee</option><option value="America/Merida">America/Merida</option><option value="America/Metlakatla">America/Metlakatla</option><option value="America/Mexico_City">America/Mexico_City</option><option value="America/Miquelon">America/Miquelon</option><option value="America/Moncton">America/Moncton</option><option value="America/Monterrey">America/Monterrey</option><option value="America/Montevideo">America/Montevideo</option><option value="America/Montreal">America/Montreal</option><option value="America/Montserrat">America/Montserrat</option><option value="America/Nassau">America/Nassau</option><option value="America/New_York">America/New_York</option><option value="America/Nipigon">America/Nipigon</option><option value="America/Nome">America/Nome</option><option value="America/Noronha">America/Noronha</option><option value="America/North_Dakota/Beulah">America/North_Dakota/Beulah</option><option value="America/North_Dakota/Center">America/North_Dakota/Center</option><option value="America/North_Dakota/New_Salem">America/North_Dakota/New_Salem</option><option value="America/Ojinaga">America/Ojinaga</option><option value="America/Panama">America/Panama</option><option value="America/Pangnirtung">America/Pangnirtung</option><option value="America/Paramaribo">America/Paramaribo</option><option value="America/Phoenix">America/Phoenix</option><option value="America/Port-au-Prince">America/Port-au-Prince</option><option value="America/Port_of_Spain">America/Port_of_Spain</option><option value="America/Porto_Velho">America/Porto_Velho</option><option value="America/Puerto_Rico">America/Puerto_Rico</option><option value="America/Rainy_River">America/Rainy_River</option><option value="America/Rankin_Inlet">America/Rankin_Inlet</option><option value="America/Recife">America/Recife</option><option value="America/Regina">America/Regina</option><option value="America/Resolute">America/Resolute</option><option value="America/Rio_Branco">America/Rio_Branco</option><option value="America/Santa_Isabel">America/Santa_Isabel</option><option value="America/Santarem">America/Santarem</option><option value="America/Santiago">America/Santiago</option><option value="America/Santo_Domingo">America/Santo_Domingo</option><option value="America/Sao_Paulo">America/Sao_Paulo</option><option value="America/Scoresbysund">America/Scoresbysund</option><option value="America/Sitka">America/Sitka</option><option value="America/St_Johns">America/St_Johns</option><option value="America/St_Kitts">America/St_Kitts</option><option value="America/St_Lucia">America/St_Lucia</option><option value="America/St_Thomas">America/St_Thomas</option><option value="America/St_Vincent">America/St_Vincent</option><option value="America/Swift_Current">America/Swift_Current</option><option value="America/Tegucigalpa">America/Tegucigalpa</option><option value="America/Thule">America/Thule</option><option value="America/Thunder_Bay">America/Thunder_Bay</option><option value="America/Tijuana">America/Tijuana</option><option value="America/Toronto">America/Toronto</option><option value="America/Tortola">America/Tortola</option><option value="America/Vancouver">America/Vancouver</option><option value="America/Whitehorse">America/Whitehorse</option><option value="America/Winnipeg">America/Winnipeg</option><option value="America/Yakutat">America/Yakutat</option><option value="America/Yellowknife">America/Yellowknife</option><option value="Antarctica/Casey">Antarctica/Casey</option><option value="Antarctica/Davis">Antarctica/Davis</option><option value="Antarctica/DumontDUrville">Antarctica/DumontDUrville</option><option value="Antarctica/Macquarie">Antarctica/Macquarie</option><option value="Antarctica/Mawson">Antarctica/Mawson</option><option value="Antarctica/McMurdo">Antarctica/McMurdo</option><option value="Antarctica/Palmer">Antarctica/Palmer</option><option value="Antarctica/Rothera">Antarctica/Rothera</option><option value="Antarctica/Syowa">Antarctica/Syowa</option><option value="Antarctica/Vostok">Antarctica/Vostok</option><option value="Asia/Aden">Asia/Aden</option><option value="Asia/Almaty">Asia/Almaty</option><option value="Asia/Amman">Asia/Amman</option><option value="Asia/Anadyr">Asia/Anadyr</option><option value="Asia/Aqtau">Asia/Aqtau</option><option value="Asia/Aqtobe">Asia/Aqtobe</option><option value="Asia/Ashgabat">Asia/Ashgabat</option><option value="Asia/Baghdad">Asia/Baghdad</option><option value="Asia/Bahrain">Asia/Bahrain</option><option value="Asia/Baku">Asia/Baku</option><option value="Asia/Bangkok">Asia/Bangkok</option><option value="Asia/Beirut">Asia/Beirut</option><option value="Asia/Bishkek">Asia/Bishkek</option><option value="Asia/Brunei">Asia/Brunei</option><option value="Asia/Choibalsan">Asia/Choibalsan</option><option value="Asia/Chongqing">Asia/Chongqing</option><option value="Asia/Colombo">Asia/Colombo</option><option value="Asia/Damascus">Asia/Damascus</option><option value="Asia/Dhaka">Asia/Dhaka</option><option value="Asia/Dili">Asia/Dili</option><option value="Asia/Dubai">Asia/Dubai</option><option value="Asia/Dushanbe">Asia/Dushanbe</option><option value="Asia/Gaza">Asia/Gaza</option><option value="Asia/Harbin">Asia/Harbin</option><option value="Asia/Hebron">Asia/Hebron</option><option value="Asia/Ho_Chi_Minh">Asia/Ho_Chi_Minh</option><option value="Asia/Hong_Kong">Asia/Hong_Kong</option><option value="Asia/Hovd">Asia/Hovd</option><option value="Asia/Irkutsk">Asia/Irkutsk</option><option value="Asia/Jakarta">Asia/Jakarta</option><option value="Asia/Jayapura">Asia/Jayapura</option><option value="Asia/Jerusalem">Asia/Jerusalem</option><option value="Asia/Kabul">Asia/Kabul</option><option value="Asia/Kamchatka">Asia/Kamchatka</option><option value="Asia/Karachi">Asia/Karachi</option><option value="Asia/Kashgar">Asia/Kashgar</option><option value="Asia/Kathmandu">Asia/Kathmandu</option><option value="Asia/Khandyga">Asia/Khandyga</option><option value="Asia/Kolkata">Asia/Kolkata</option><option value="Asia/Krasnoyarsk">Asia/Krasnoyarsk</option><option value="Asia/Kuala_Lumpur">Asia/Kuala_Lumpur</option><option value="Asia/Kuching">Asia/Kuching</option><option value="Asia/Kuwait">Asia/Kuwait</option><option value="Asia/Macau">Asia/Macau</option><option value="Asia/Magadan">Asia/Magadan</option><option value="Asia/Makassar">Asia/Makassar</option><option value="Asia/Manila">Asia/Manila</option><option value="Asia/Muscat">Asia/Muscat</option><option value="Asia/Nicosia">Asia/Nicosia</option><option value="Asia/Novokuznetsk">Asia/Novokuznetsk</option><option value="Asia/Novosibirsk">Asia/Novosibirsk</option><option value="Asia/Omsk">Asia/Omsk</option><option value="Asia/Oral">Asia/Oral</option><option value="Asia/Phnom_Penh">Asia/Phnom_Penh</option><option value="Asia/Pontianak">Asia/Pontianak</option><option value="Asia/Pyongyang">Asia/Pyongyang</option><option value="Asia/Qatar">Asia/Qatar</option><option value="Asia/Qyzylorda">Asia/Qyzylorda</option><option value="Asia/Rangoon">Asia/Rangoon</option><option value="Asia/Riyadh">Asia/Riyadh</option><option value="Asia/Sakhalin">Asia/Sakhalin</option><option value="Asia/Samarkand">Asia/Samarkand</option><option value="Asia/Seoul">Asia/Seoul</option><option value="Asia/Shanghai">Asia/Shanghai</option><option value="Asia/Singapore">Asia/Singapore</option><option value="Asia/Taipei">Asia/Taipei</option><option value="Asia/Tashkent">Asia/Tashkent</option><option value="Asia/Tbilisi">Asia/Tbilisi</option><option value="Asia/Tehran">Asia/Tehran</option><option value="Asia/Thimphu">Asia/Thimphu</option><option value="Asia/Tokyo">Asia/Tokyo</option><option value="Asia/Ulaanbaatar">Asia/Ulaanbaatar</option><option value="Asia/Urumqi">Asia/Urumqi</option><option value="Asia/Ust-Nera">Asia/Ust-Nera</option><option value="Asia/Vientiane">Asia/Vientiane</option><option value="Asia/Vladivostok">Asia/Vladivostok</option><option value="Asia/Yakutsk">Asia/Yakutsk</option><option value="Asia/Yekaterinburg">Asia/Yekaterinburg</option><option value="Asia/Yerevan">Asia/Yerevan</option><option value="Atlantic/Azores">Atlantic/Azores</option><option value="Atlantic/Bermuda">Atlantic/Bermuda</option><option value="Atlantic/Canary">Atlantic/Canary</option><option value="Atlantic/Cape_Verde">Atlantic/Cape_Verde</option><option value="Atlantic/Faroe">Atlantic/Faroe</option><option value="Atlantic/Madeira">Atlantic/Madeira</option><option value="Atlantic/Reykjavik">Atlantic/Reykjavik</option><option value="Atlantic/South_Georgia">Atlantic/South_Georgia</option><option value="Atlantic/St_Helena">Atlantic/St_Helena</option><option value="Atlantic/Stanley">Atlantic/Stanley</option><option value="Australia/Adelaide">Australia/Adelaide</option><option value="Australia/Brisbane">Australia/Brisbane</option><option value="Australia/Broken_Hill">Australia/Broken_Hill</option><option value="Australia/Currie">Australia/Currie</option><option value="Australia/Darwin">Australia/Darwin</option><option value="Australia/Eucla">Australia/Eucla</option><option value="Australia/Hobart">Australia/Hobart</option><option value="Australia/Lindeman">Australia/Lindeman</option><option value="Australia/Lord_Howe">Australia/Lord_Howe</option><option value="Australia/Melbourne">Australia/Melbourne</option><option value="Australia/Perth">Australia/Perth</option><option value="Australia/Sydney">Australia/Sydney</option><option value="CET">CET</option><option value="CST6CDT">CST6CDT</option><option value="EET">EET</option><option value="EST">EST</option><option value="EST5EDT">EST5EDT</option><option value="Europe/Amsterdam">Europe/Amsterdam</option><option value="Europe/Andorra">Europe/Andorra</option><option value="Europe/Athens">Europe/Athens</option><option value="Europe/Belgrade">Europe/Belgrade</option><option value="Europe/Berlin">Europe/Berlin</option><option value="Europe/Brussels">Europe/Brussels</option><option value="Europe/Bucharest">Europe/Bucharest</option><option value="Europe/Budapest">Europe/Budapest</option><option value="Europe/Chisinau">Europe/Chisinau</option><option value="Europe/Copenhagen">Europe/Copenhagen</option><option value="Europe/Dublin">Europe/Dublin</option><option value="Europe/Gibraltar">Europe/Gibraltar</option><option value="Europe/Helsinki">Europe/Helsinki</option><option value="Europe/Istanbul">Europe/Istanbul</option><option value="Europe/Kaliningrad">Europe/Kaliningrad</option><option value="Europe/Kiev">Europe/Kiev</option><option value="Europe/Lisbon">Europe/Lisbon</option><option value="Europe/London">Europe/London</option><option value="Europe/Luxembourg">Europe/Luxembourg</option><option value="Europe/Madrid">Europe/Madrid</option><option value="Europe/Malta">Europe/Malta</option><option value="Europe/Minsk">Europe/Minsk</option><option value="Europe/Monaco">Europe/Monaco</option><option value="Europe/Moscow">Europe/Moscow</option><option value="Europe/Oslo">Europe/Oslo</option><option value="Europe/Paris">Europe/Paris</option><option value="Europe/Prague">Europe/Prague</option><option value="Europe/Riga">Europe/Riga</option><option value="Europe/Rome">Europe/Rome</option><option value="Europe/Samara">Europe/Samara</option><option value="Europe/Simferopol">Europe/Simferopol</option><option value="Europe/Sofia">Europe/Sofia</option><option value="Europe/Stockholm">Europe/Stockholm</option><option value="Europe/Tallinn">Europe/Tallinn</option><option value="Europe/Tirane">Europe/Tirane</option><option value="Europe/Uzhgorod">Europe/Uzhgorod</option><option value="Europe/Vaduz">Europe/Vaduz</option><option value="Europe/Vienna">Europe/Vienna</option><option value="Europe/Vilnius">Europe/Vilnius</option><option value="Europe/Volgograd">Europe/Volgograd</option><option value="Europe/Warsaw">Europe/Warsaw</option><option value="Europe/Zaporozhye">Europe/Zaporozhye</option><option value="Europe/Zurich">Europe/Zurich</option><option value="HST">HST</option><option value="Indian/Antananarivo">Indian/Antananarivo</option><option value="Indian/Chagos">Indian/Chagos</option><option value="Indian/Christmas">Indian/Christmas</option><option value="Indian/Cocos">Indian/Cocos</option><option value="Indian/Comoro">Indian/Comoro</option><option value="Indian/Kerguelen">Indian/Kerguelen</option><option value="Indian/Mahe">Indian/Mahe</option><option value="Indian/Maldives">Indian/Maldives</option><option value="Indian/Mauritius">Indian/Mauritius</option><option value="Indian/Mayotte">Indian/Mayotte</option><option value="Indian/Reunion">Indian/Reunion</option><option value="MET">MET</option><option value="MST">MST</option><option value="MST7MDT">MST7MDT</option><option value="PST8PDT">PST8PDT</option><option value="Pacific/Apia">Pacific/Apia</option><option value="Pacific/Auckland">Pacific/Auckland</option><option value="Pacific/Chatham">Pacific/Chatham</option><option value="Pacific/Chuuk">Pacific/Chuuk</option><option value="Pacific/Easter">Pacific/Easter</option><option value="Pacific/Efate">Pacific/Efate</option><option value="Pacific/Enderbury">Pacific/Enderbury</option><option value="Pacific/Fakaofo">Pacific/Fakaofo</option><option value="Pacific/Fiji">Pacific/Fiji</option><option value="Pacific/Funafuti">Pacific/Funafuti</option><option value="Pacific/Galapagos">Pacific/Galapagos</option><option value="Pacific/Gambier">Pacific/Gambier</option><option value="Pacific/Guadalcanal">Pacific/Guadalcanal</option><option value="Pacific/Guam">Pacific/Guam</option><option value="Pacific/Honolulu">Pacific/Honolulu</option><option value="Pacific/Johnston">Pacific/Johnston</option><option value="Pacific/Kiritimati">Pacific/Kiritimati</option><option value="Pacific/Kosrae">Pacific/Kosrae</option><option value="Pacific/Kwajalein">Pacific/Kwajalein</option><option value="Pacific/Majuro">Pacific/Majuro</option><option value="Pacific/Marquesas">Pacific/Marquesas</option><option value="Pacific/Midway">Pacific/Midway</option><option value="Pacific/Nauru">Pacific/Nauru</option><option value="Pacific/Niue">Pacific/Niue</option><option value="Pacific/Norfolk">Pacific/Norfolk</option><option value="Pacific/Noumea">Pacific/Noumea</option><option value="Pacific/Pago_Pago">Pacific/Pago_Pago</option><option value="Pacific/Palau">Pacific/Palau</option><option value="Pacific/Pitcairn">Pacific/Pitcairn</option><option value="Pacific/Pohnpei">Pacific/Pohnpei</option><option value="Pacific/Port_Moresby">Pacific/Port_Moresby</option><option value="Pacific/Rarotonga">Pacific/Rarotonga</option><option value="Pacific/Saipan">Pacific/Saipan</option><option value="Pacific/Tahiti">Pacific/Tahiti</option><option value="Pacific/Tarawa">Pacific/Tarawa</option><option value="Pacific/Tongatapu">Pacific/Tongatapu</option><option value="Pacific/Wake">Pacific/Wake</option><option value="Pacific/Wallis">Pacific/Wallis</option><option value="Etc/UTC">UTC</option><option value="WET">WET</option>        </select>
+              </div>
+              <div class='col-md-2'>
+                <input type='text' name='timezoneOffset' placeholder='offset' class='required form-control' id="tznum">
+              </div>
+
+              <input type='hidden' value="Asia/Omsk" id="currentTimezoneName" />
+
+              <div id="detectorRow" style='margin:20px;'>
+                <div class='col-md-8 col-lg-12'>
+                  <div class='col-md-12 form-group'>
+                    <p class='form-control-static' style='padding:4px;'>Detected: <span id="tztext"></span>. <button class='btn btn-default btn-xs' href="#" id="tzdetect">&nbsp;&nbsp;&laquo; use detected timezone</button></p>
+                  </div>
+                </div>
+                <p id="timezonecaveat" class='alert alert-info hidden' style='padding:10px; clear:both'><span class='label label-info'>BTW:</span> Timezones that aren't exact hours get rounded. This just means your emails will show up on the half-hours (or whatever) instead of the hours. Everyone else is stuck with on-the-hour, so you've got just as much flexibility :)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='dayStartTime'>Time next day starts</label>
+            <div class='col-md-6'>
+              <select class='form-control' name='dayStartTime' id="dayStartTime" ng-model="dsthour">
+                <option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option>
+              </select>
+              <input type='hidden' value="-2" id="currentDayStartTime" />
+              <p class='help-block'>This is used to figure out when to switch from one day to another. Pick a time roughly halfway between when you usually go to bed and when you usually get up.</p>
+            </div>
+          </div>
+
+
+          <hr>
+          <h3>Daily prompts</h3>
+
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='intentionstime'>Intentions</label>
+            <div class='col-md-2'>
+              <select class='form-control' name='intentionTime' id="intentiontime" ng-disabled="user.emailSettings.intentionsDisabled"><option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option></select>
+              <input type='hidden' value="2" id="currentIntentionTime" />
+            </div>
+            <div class='col-md-2'>
+              <div class='radio'>
+                <label>
+                  <input type='radio' name='intentionMode' id="mode_nightbefore" value="nightbefore"  ng-disabled="user.emailSettings.intentionsDisabled">
+                  the night before.
+                </label>
+              </div>
+              <div class='radio'>
+                <label>
+                  <input type='radio' name='intentionMode' id="mode_sameday" value="sameday" checked ng-disabled="user.emailSettings.intentionsDisabled">
+                  the morning of.
+                </label>
+              </div>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='intentionsDisabled'
+                bs-switch ng-model="user.emailSettings.intentionsDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info"
+                >
+            </div>
+            <div class='col-md-6 col-md-offset-2'>
+              <p class='help-block'>An email asking: "What are you planning to do towards your goals today?"</p>
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='outcomestime'>Outcomes</label>
+            <div class='col-md-2'>
+              <select class='form-control' name='outcomeTime' id="outcometime" ng-disabled="user.emailSettings.outcomesDisabled"><option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option></select>
+              <input type='hidden' value="16" id="currentOutcomeTime" />
+            </div>
+            <div class='col-md-2'></div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='outcomesDisabled'
+                bs-switch ng-model="user.emailSettings.outcomesDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+            <div class='col-md-6 col-md-offset-2 clearfix'>
+              <p class='help-block'>An email asking: "What did you actually do towards your goals today?"</p>
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label'>Email days</label>
+            <div class='col-md-6 week-offDays'>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-0' value='0' checked>
+                <br>
+                <label for='offDays-0'>Sun</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-1' value='1' checked>
+                <br>
+                <label for='offDays-1'>Mon</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-2' value='2' checked>
+                <br>
+                <label for='offDays-2'>Tues</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-3' value='3' checked>
+                <br>
+                <label for='offDays-3'>Wed</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-4' value='4' checked>
+                <br>
+                <label for='offDays-4'>Thur</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-5' value='5' checked>
+                <br>
+                <label for='offDays-5'>Fri</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='offDaysArray[]' id='offDays-6' value='6' checked>
+                <br>
+                <label for='offDays-6'>Sat</label>
+              </div>
+            </div>
+            <div class='col-md-4 col-md-offset-2'>
+              <p class='help-block'>Select the days for which you wish to receive emails.</p>
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label'>Streak days</label>
+            <div class='col-md-6 week-optionalDays'>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-0' value='0' checked>
+                <br>
+                <label for='optionalDays-0'>Sun</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-1' value='1' checked>
+                <br>
+                <label for='optionalDays-1'>Mon</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-2' value='2' checked>
+                <br>
+                <label for='optionalDays-2'>Tues</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-3' value='3' checked>
+                <br>
+                <label for='optionalDays-3'>Wed</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-4' value='4' checked>
+                <br>
+                <label for='optionalDays-4'>Thur</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-5' value='5' checked>
+                <br>
+                <label for='optionalDays-5'>Fri</label>
+              </div>
+              <div class='dow-checker'>
+                <input type='checkbox' name='optionalDaysArray[]' id='optionalDays-6' value='6' checked>
+                <br>
+                <label for='optionalDays-6'>Sat</label>
+              </div>
+            </div>
+            <div class='col-md-4 col-md-offset-2'>
+              <p class='help-block'>For calculating streaks. Unticked days are allowed to be skipped if that day's data is missing. For instance, if you plan to mostly take weekends off, untick the Sat/Sun boxes here and under <strong>Email days</strong>.</p>
+            </div>
+          </div>
+
+
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='goalStreaksDisabled'>Include Goal Streaks</label>
+            <div class='col-md-4'>
+              <p class='help-block'>Shows how many days in a row you have or haven't worked on each of your goals. Nice if you're trying to work on most goals most days... annoying otherwise :P</p>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='goalStreaksDisabled'
+                bs-switch ng-model="user.emailSettings.goalStreaksDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+
+          </div>
+
+          <div class='form-group' ng-cloak>
+            <label class='col-md-2 control-label' for='smartPromptsDisabled'>Smart Prompts</label>
+            <div class='col-md-4'>
+              <p class='help-block'>When you've been actively using the web interface for more than 3 days in a row, I'll mute the daily emails, but then if you disappear for a day, they come back to keep you on track!</p>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='smartPromptsDisabled'
+                bs-switch ng-model="user.emailSettings.smartPromptsDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="default"
+                switch-off-color="
+                info
+
+
+                ">
+                <br><br>
+            </div>
+          </div>
+
+          <div class='form-group' ng-cloak>
+            <label class='col-md-2 control-label' for='outcomestime'>Take a break</label>
+            <div class='col-md-2'>
+              <div>Start:</div>
+              <input
+                type='text' class='form-control' style='display: inline-block; width: 100px'
+                datepicker-popup='yyyy-MM-dd'
+                ng-model="user.emailSettings.holidayStartDate" is-open="holiday.showStartDatepicker"
+                min-date="holiday.minStartDate"
+                datepicker-options="datepickerOptions"
+                name='holidayStartDate'
+                value=""
+                ng-disabled="holiday.disabled"
+                close-text="Close" />
+              <span class='input-group-btn' style='display: inline-block; width: 40px'>
+                <button type='button' class='btn btn-default' ng-click="openStartDatepicker($event)"><i class='glyphicon glyphicon-calendar'></i></button>
+              </span>
+            </div>
+            <div class='col-md-2'>
+              <div>End:</div>
+              <input
+                type='text' class='form-control' style='display: inline-block; width: 100px'
+                datepicker-popup='yyyy-MM-dd'
+                ng-model="user.emailSettings.holidayEndDate" is-open="holiday.showEndDatepicker"
+                min-date="holiday.minEndDate"
+                datepicker-options="datepickerOptions"
+                name='holidayEndDate'
+                value=""
+                ng-disabled="holiday.disabled"
+                ng-required="!holiday.disabled"
+                close-text="Close" />
+              <span class='input-group-btn' style='display: inline-block; width: 40px'>
+                <button type='button' class='btn btn-default' ng-click="openEndDatepicker($event)"><i class='glyphicon glyphicon-calendar'></i></button>
+              </span>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='holidayDisabled'
+                bs-switch ng-model="holiday.disabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="default"
+                switch-off-color="warning"
+                >
+            </div>
+            <div class='col-md-6 col-md-offset-2 clearfix'>
+              <p class='help-block'>Turn off the email prompts for a set period of time.</p>
+            </div>
+          </div>
+
+          <hr>
+          <h3>Reviews</h3>
+            <p class='help-block'>You can access your reviews at any time from <a href="/Fivapr/reviews/">here</a>.</p>
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for='weeklyTime'>Weekly review</label>
+            <div class='col-md-2'>
+              <select class='form-control' name='weeklyTime' id="weeklyTime" ng-disabled="user.emailSettings.weeklyDisabled"><option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option></select>
+              <input type='hidden' value="3" id="currentWeeklyTime" />
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' name='weeklyDay' id="weeklyDay" ng-disabled="user.emailSettings.weeklyDisabled"><option value="0">Sunday</option><option value="1">Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option><option value="6">Saturday</option></select>
+              <input type='hidden' value="0" id="currentWeeklyDay" />
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='weeklyDisabled'
+                bs-switch ng-model="user.emailSettings.weeklyDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+            <div class='col-md-6 col-md-offset-2'>
+              <p class='help-block'>A summary of your progress towards each goal and some questions to help you reflect on your past week and plan the next week.</p>
+            </div>
+          </div>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for=''>Monthly review</label>
+            <div class='col-md-4'>
+              <input type='text' class='form-control' disabled="true" value="Sent out on the 1st of every month." style='text-align:center' />
+            </div>
+            <!--<div class='col-md-2'>
+              <select class='form-control' name='weeklyTime' id="weeklyTime" ng-disabled="user.emailSettings.monthlyDisabled"><option value="0">midnight</option><option value="1">1am</option><option value="2">2am</option><option value="3">3am</option><option value="4">4am</option><option value="5">5am</option><option value="6">6am</option><option value="7">7am</option><option value="8">8am</option><option value="9">9am</option><option value="10">10am</option><option value="11">11am</option><option value="12">noon</option><option value="13">1pm</option><option value="14">2pm</option><option value="15">3pm</option><option value="16">4pm</option><option value="17">5pm</option><option value="18">6pm</option><option value="19">7pm</option><option value="20">8pm</option><option value="21">9pm</option><option value="22">10pm</option><option value="23">11pm</option></select>
+              <input type='hidden' value="3" id="currentWeeklyTime" />
+            </div>
+            <div class='col-md-2'>
+              <select class='form-control' name='weeklyDay' id="weeklyDay" ng-disabled="user.emailSettings.monthlyDisabled"><option value="0">Sunday</option><option value="1">Monday</option><option value="2">Tuesday</option><option value="3">Wednesday</option><option value="4">Thursday</option><option value="5">Friday</option><option value="6">Saturday</option></select>
+              <input type='hidden' value="0" id="currentWeeklyDay" />
+            </div>-->
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='monthlyDisabled'
+                bs-switch ng-model="user.emailSettings.monthlyDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+            <div class='col-md-6 col-md-offset-2'>
+              <p class='help-block'>An overview of the month and some higher level questions for reflection.</p>
+            </div>
+          </div>
+
+          <hr>
+          <h3>Other</h3>
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for=''>Priority check-ins</label>
+            <div class='col-md-4'>
+              <p class='help-block'>Get an email on the date set for your Top Priorities, to remind you to assess how you're doing</p>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='prioritiesDisabled'
+                bs-switch ng-model="user.emailSettings.prioritiesDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+            <div class='col-md-6 col-md-offset-2'>
+            </div>
+          </div>
+
+
+          <div class='form-group'>
+            <label class='col-md-2 control-label' for=''>Complice feature newsletter</label>
+            <div class='col-md-4'>
+              <p class='help-block'>An email sent out a few times monthly letting you know about Complice's new features. If you're super impatient and want to know immediately, you can follow <a href="https://twitter.com/compluvi">@ComplUVI</a>, the Complice User Visible Improvement twitter account.</p>
+            </div>
+            <div class='col-md-2'>
+              <input
+                type='checkbox' name='newsletterDisabled'
+                bs-switch ng-model="user.emailSettings.newsletterDisabled"
+                switch-on-text="OFF"
+                switch-off-text="ON"
+                switch-on-color="danger"
+                switch-off-color="info">
+            </div>
+            <div class='col-md-6 col-md-offset-2'>
+            </div>
+          </div>
+
+          <div class='row' style='clear:both;'>
+            <div class='col-md-6'>
+              <div class='input-group' style='float:right'>
+                <button type='submit' class='btn btn-info' value="Update Settings" name='update' id="updatebtn">Update Settings</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div id='partner' class='tab-pane'>
+
+        <div class='col-md-10 col-md-offset-1'>
+          <div class='help-block'>
+            <h4>Get someone to keep you accountable. Features:</h4>
+            <ul style='font-size: 16px'>
+              <li>You can set goal visibility to <span class='label label-info'>my partner</span>, which means that only you and your partner can see that goal and its entries</li>
+              <li>You and your partner get email updates on each others' intentions and outcomes when you submit them.</li>
+              <li>You can see your partner's to-do list on your own today page.</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class='col-md-5 col-md-offset-1'>
+        </div>
+
+        <div class='col-md-5 col-md-offset-1'>
+        </div>
+
+        <div class='col-md-12 clearfix'>
+          <h3>1. Find a partner on this facebook thread</h3>
+          <a href="https://www.facebook.com/permalink.php?story_fbid=586500864839708&id=372049162951547" target='_blank'>Click here, but make sure not to get distracted!</a>
+        </div>
+
+        <div class='col-md-4'>
+          <h3>2. Ask an existing user to be partners</h3>
+          <div class='form-group'>
+            <span class='help-block'>Already have a person in mind? Connect with them here.</span>
+            <span class='help-block'>Search by username... </span>
+            <input type='text' id="partnerQuery" name='partnerQuery' placeholder='Search...' class='form-control' ng-model="partnerQuery" ng-model-options="{debounce:400}">
+          </div>
+          <div>
+            <div class='user-card' ng-repeat="match in matches">
+              <a class='card-link-left' href="/{[{match.username}]}/" title="View {[{match.name}]}'s timeline">
+                <div>
+                  <img ng-src="match.url" style='height:60px;width:60px;' />
+                </div>
+                <div style='vertical-align:bottom;font-weight:bold'>
+                  {[{match.name}]}
+                </div>
+                <div style='vertical-align:bottom'>
+                  {[{match.username}]}
+                </div>
+                <div style='vertical-align:bottom'>
+                  Joined {[{match.joindate}]}
+                </div>
+              </a>
+              <div style='width:50%;float:right;'>
+                <div  ng-repeat="goal in match.goals" style='background-color:{[{goal.color}]}; padding:2px 6px; border-radius: 2px; position: relative; top:-3px; margin: 2px; font-size:12px; color: #fff; line-height:16px;'>
+                  {[{goal.name}]}
+                </div>
+              </div>
+              <div>
+                <button type='button' class='btn btn-default btn-block' ng-click="sendPartnerRequest(match.username)" ng-disabled="userRequest" ng-hide="userRequest.username == match.username">
+                  <span class='glyphicon glyphicon-user' ></span>
+                  Send request
+                  <span class='glyphicon glyphicon-plus' ></span>
+                </button>
+                <button type='button' class='btn btn-success btn-block' ng-click="sendPartnerRequest(match.username)" ng-show="userRequest.username == match.username" disabled>
+                  <span class='glyphicon glyphicon-ok' ></span>
+                  Sent!
+                </button>
+              </div>
+            </div><!--usercard-->
+          </div>
+        </div>
+
+        <div class='col-md-4'>
+          <div style='padding:0 0 20px 0'>
+            <form id="match-request-form" onsubmit="event.preventDefault();">
+              <h3>3. Get matched with someone</h3>
+              <div class='form-group'>
+                <p class='help-block'>Anything in particular you care about? What kind of partner you want, or what you're expecting from the partnership. This might be quoted to prospective partners :)</p>
+                <p class='help-block'>Note that we may not be able to fill your request.</p>
+                <textarea class='form-control' name='matchMessage' ng-model="matchMessage" rows="4" cols="30"></textarea>
+              </div>
+              <div class='pacman match-request-spinner' style='display: none'></div>
+              <span class='help-block' ng-show="!matchMessage || matchMessage.length < 10">
+                (type something above in order to submit)
+              </span>
+              <button class='btn btn-success' ng-disabled="!matchMessage || matchMessage.length < 10" ng-click="sendMatchRequest()">
+                <span class='glyphicon glyphicon-user' ></span>&nbsp;
+                Request a match!
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class='col-md-4'>
+          <div style='padding:0 0 20px 0'>
+            <form id="email-invite-form" onsubmit="event.preventDefault();">
+              <h3>4. Invite someone to join Complice</h3>
+              <div class='form-group'>
+                <label for='inviteeName'>Friend's name</label>
+                <input class='form-control' type='text' name='inviteeName'size="30" ng-model="inviteeName" />
+              </div>
+              <div class='form-group'>
+                <label for='inviteeEmail'>Friend's email</label>
+                <input class='form-control' type='text' name='inviteeEmail' size="30" ng-model="inviteeEmail" />
+              </div>
+              <div class='form-group' ng-show="inviteeName">
+                <label for='inviteeMessage'>Your message</label>
+                <textarea class='form-control' name='inviteeMessage' rows="10" cols="30">
+        Hey {[{inviteeName}]},
+
+        I'm using Complice to focus on the important steps towards achieving towards my goals, and I'd love to have you as my accountability partner. Click the button below to signup:
+
+        [THIS_TEXT_WILL_BE_REPLACED_BY_A_LINK]
+
+        Cheers,
+        Fivapr
+                </textarea>
+              </div>
+              <div class='pacman email-invite-spinner' style='display: none'></div>
+
+              <button class='btn btn-success' ng-show="inviteeName" ng-click="sendInviteEmail()">
+                <span class='glyphicon glyphicon-envelope' ></span>&nbsp;
+                Send email
+              </button>
+            </form>
+          </div>
+        </div>
+              </div>
+
+      <div id='payment' class='col-md-12 tab-pane'>
+                <div>
+                  <div class='well' style='margin-top:20px'>
+                    <p>Hey Fivapr,</p>
+                    <p>I know you've got 8 day<span class='hide-if-one-8'>s</span> left. Don't worry&mdash;adding your card won't cause you to get charged any sooner. It just makes the red button at the top go away :)</p>
+                    <p>Malcolm<br>Complice Founder</p>
+                  </div>
+                </div>
+                <div style='margin:20px 0'>
+                  <p class='large'>
+                    Get two months free when you pay for a whole year of Complice.
+                  </p>
+                  <div class='clearfix' style='height:20px'></div>
+                  <div class='col-md-6'>
+                    <button class='btn btn-primary' id="buttonYear">Let's do it! A year of productivity for $120!</button>
+                    <br>
+                    <div style='padding-left: 270px; font-size: 40px; display: none' id="arrowYear">
+                      <span class='glyphicon glyphicon-arrow-down'></span>
+                    </div>
+                  </div>
+                  <div class='col-md-6'>
+                    <button class='btn btn-default' id="buttonMonth">Just the monthly subscription, thanks.</button>
+                    <br>
+                    <div style='padding-left: 120px; font-size: 40px; display: none' id="arrowMonth">
+                      <span class='glyphicon glyphicon-arrow-down'></span>
+                    </div>
+                  </div>
+                </div>
+                <form style='clear:both' class='form-horizontal hideifcard' id="paymentForm" name='paymentForm' role='form'
+                action="/Fivapr/settings/payment"
+                method="post" ng-submit="ensureExpDate()">
+                <!--
+                /settings/addCard" }}
+                 -->
+                  <div class='col-md-6'>
+                  <h3 style='text-align: center'>Enter your card info below</h3>
+                    <div class='card-display'>
+
+                    </div>
+                    <div class='payment-fields'>
+                      <div class='payment-row1'>
+                        <input type='text' autocomplete="billing cc-number" data-stripe="number" placeholder='Card number' class='form-control'>
+                        <input type='text' autocomplete="billing cc-name" data-stripe="name" placeholder='Full name' class='form-control'>
+                      </div>
+                      <div class='payment-row2' style='position: relative'>
+                        <input type='text' autocomplete="billing cc-exp" ng-model="ccmmyy" class='form-control' placeholder='MM/YY' id="cardexp">
+                        <input type='text' autocomplete="billing cc-csc" data-stripe="cvc" placeholder='CVC' class='form-control'>
+                        <input type='hidden' value="" id="discountBecauseYoure" name='discountBecauseYoure'>
+                          <input type='text' value="$12/mo subscription" class='form-control payment-plan' disabled="true" style='' id="paymentPlan">
+                          <input type='hidden' value="betapremium" id="plancode" name='plancode'>
+                      </div>
+                      <div class='payment-row3' style='position: relative'>
+                        <input type='text' autocomplete="billing street-address" data-stripe="address_line1" placeholder='Street Address' class='form-control'>
+                        <input type='text' autocomplete="billing postal-code" data-stripe="address_zip" placeholder='Zip/Postal' class='form-control'>
+                      </div>
+                      <div class='form-group' style='margin:10px auto; clear:both; width: 352px; overflow: visible'>
+                        <div class='col-md-6' style='text-align:center'>
+                          <a href="https://stripe.com" tabindex="-1"><img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/powered_by_stripe.png" style='width:119px; height:26px; display:inline-block;' /></a>
+                        </div>
+                        <div class='col-md-6' style='text-align:center; overflow: visible;'>
+                          <button id="paymentSubmit" name='paymentSubmit' type='submit' class='btn btn-info'>Submit</button>
+                          <div class='pacman submit-payment-spinner' style='display: none; overflow: visible;'></div>
+                        </div>
+                      </div>
+                    </div>
+                    <input type='text' data-stripe="exp-month" class='form-control' style='display:none;' placeholder='MM' ng-model="ccmm" />
+                    <input type='text' data-stripe="exp-year" class='form-control' style='display:none;' placeholder='YYYY' ng-model="ccyyyy" />
+                  </div>
+                </form>
+              </div>
+
+      <div id='apps' class='col-md-12 tab-pane'>
+        <div class='row' style='padding-top:20px'>
+          <div class='col-xs-8 col-sm-5 col-md-4 col-lg-3 text-right'>
+            <a href="/Fivapr/apps/beeminder" class='btn btn-default' style='position:relative; margin-bottom: 20px'>
+              <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/beeminder-logo.png" style='width:287px; height:78px; margin-left: -52px;'>
+              <span style='position: absolute; bottom: 12px; right: 70px;'>Connect</span>
+            </a>
+            <a class='btn btn-beem' id='beem-more-btn' onclick="$(this).slideUp(150); $('#beem-more').slideToggle();">Learn more about Beeminder</a>
+          </div>
+          <div class='col-xs-12 col-sm-7 col-md-8 col-lg-9 clearfix-xs'>
+            <p class='clearfix'>Beeminder is a system for numeric goal-tracking and hard accountability: pledge money to doing what's important to you on a consistent basis.</p>
+          </div>
+          <div class='clearfix'></div>
+          <div id="beem-more" class='beem-box' style='margin-top: 10px; padding: 16px; position: relative; display: none;'>
+            <a class='btn btn-beem btn-xs' style='float: right; position: relative; z-index: 500;' onclick="$('#beem-more').slideToggle(); $('#beem-more-btn').slideDown(150);">hide</a>
+            <p class='col-lg-7'>
+            <img src="https://www.beeminder.com/assets/sample_graph-925c22dde11a3e9988c1fed3cec20aa941db9cabbd38fa000719f4dc1c80cf6b.png" class='beem-graph'>
+
+            Beeminder is for quantifiable, graphable, usually long-term goals. It focuses on ongoing metrics like time spent working, pages read, words written, or tasks completed. (It's also good for fitness goals like steps, calories, weight, hours of sleep, etc.)</p>
+
+            <p class='col-lg-7'>What really makes Beeminder unique though, is adding an explicit commitment device to your Quantified Self data. You literally enter a credit card and agree to get charged money if you don't keep all your datapoints on a Yellow Brick Road to your goal. If that sounds scary, you may be highly motivated to stay on track. You don't have to enter a credit card until the first time you derail and even then you don't have to actually pay anything until you go off track a second time.</p>
+
+            <div class='beem-options-box'>
+              <h3 style='margin: 15px; text-align: center'>Complice things to (bee)mind</h3>
+              <ul class='beem-options'>
+                <li><img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png" style='height: 1.3em;'> Using Complice daily</li>
+                <li><span class='glyphicon glyphicon-list' style='color: #3c0;'></span> Intentions &amp; outcomes</li>
+                <li><img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/pomodoro.png" style='height: 1.1em;'> Pomodoros (total &amp; per-goal)</li>
+                <li><span class='glyphicon glyphicon-star' style='color: #0ad;'></span> Starred tasks (total &amp; per-goal)</li>
+                <li><span class='glyphicon glyphicon-inbox' style='color: #960;'></span> Weekly &amp; monthly reviews</li>
+              </ul>
+            </div>
+            <div class='clearfix'></div>
+            <div class='text-center'>
+              <a class='btn btn-black' href="/Fivapr/apps/beeminder">
+                Get started with Beeminder
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class='row'>
+          <div class='col-xs-8 col-sm-5 col-md-4 col-lg-3 text-right'>
+            <a href="/Fivapr/apps/workflowy/" class='btn btn-default' style='position:relative; margin-bottom: 20px; width: 261px; height: 94px'>
+              <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/apps/workflowy_icon_rounded_corners_512x512.png" style='width:78px; height:78px; position: absolute; left: -37px'>
+              <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/apps/workflowy_textmark.png" style=' position: absolute; top: 20px; right: 11px; width: 200px; height: %'>
+              <span style='position: absolute; bottom: 12px; right: 70px;'>Connect</span>
+            </a>
+            <a class='btn btn-beem' id='wf-more-btn' onclick="$(this).slideUp(150); $('#wf-more').slideToggle();">Learn more about WorkFlowy</a>
+
+            <!--
+            <a href='/Fivapr/apps/workflowy' style='margin:6px auto' class='btn btn-sm btn-info'>
+              <img style='width: 320px; max-width: 100%;' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/cntp_screenshot_trans.png"><br>
+              Add to Chrome
+            </a>-->
+          </div>
+          <div class='col-xs-12 col-sm-7 col-md-8 col-lg-9 clearfix-xs'>
+            <p class='clearfix'>Pull in tasks from your organized projects in WorkFlowy, complete them in Complice, and they get completed in WorkFlowy too. Tag tasks <code>#today</code> or <code>#tomorrow</code> or <code>#tuesday</code> or <code>#2016-07-01</code> to have them automatically added when drafting your intentions for that day.</p>
+
+          </div>
+          <div class='clearfix'></div>
+          <div id="wf-more" class='wf-box' style='margin-top: 10px; padding: 16px; position: relative; display: none;'>
+            <a class='btn btn-wf btn-xs' style='float: right; position: relative; z-index: 500;' onclick="$('#wf-more').slideToggle(); $('#wf-more-btn').slideDown(150);">hide</a>
+            <iframe class='wf-video' width="240" height="180" src="https://www.youtube.com/embed/CSmbnaPZVHE" frameborder="0" allowfullscreen></iframe>
+            <p style='margin-left: 240px; padding: 25px'>
+
+
+            WorkFlowy is a notebook for lists&mdash;infinitely nested hierarchical lists. It's the perfect tool for taking notes, breaking down projects into tasks and subtasks, and making complex plans. By linking it with Complice, you can make those plans <strong><em>actually happen</em></strong>.</p>
+
+            <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/ss/apps/complice_plus_workflowy_og.png" class='wf-ss'>
+            <br>
+            <div class='clearfix'></div>
+            <div class='text-center' style='margin-top: 10px'>
+              <a class='btn btn-black' href="/Fivapr/apps/workflowy">
+                Get started with WorkFlowy
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class='row'>
+          <div class='col-xs-8 col-sm-5 col-md-4 col-lg-3 text-right'>
+            <!--<a href="/Fivapr/apps/beeminder" class='btn btn-default' style='position:relative; margin-bottom: 20px'>
+              <img src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/beeminder-logo.png" style='width:287px; height:78px; margin-left: -52px;'>
+              <span style='position: absolute; right: 18px; bottom:12px'>
+              Connect with Beeminder
+
+              </span>
+            </a>-->
+            <button type='button' style='margin:6px auto' class='btn btn-default' onclick="chrome && chrome.webstore.install('https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon', chromeInstallSuccess, chromeInstallFail)">
+              <img style='width: 320px; max-width: 100%;' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/cntp_screenshot_trans.png"><br>
+              Add to Chrome
+            </button>
+          </div>
+          <div class='col-xs-12 col-sm-7 col-md-8 col-lg-9'>
+            <p class='clearfix'>When you open your new tab page, do you get distracted by links to sites like Facebook and Reddit? Replace those distractions with your next action on Complice and a giant DONE button. </p>
+            <p>
+              <span class='glyphicon glyphicon-arrow-left hidden-xs-inline'></span>
+              <span class='glyphicon glyphicon-arrow-up visible-xs-inline'></span>
+              Click this button to install the Complice New Tab Page Chrome Extension.
+            </p>
+            <p><a href="https://chrome.google.com/webstore/detail/edocdpcgndegohhhonllogdaccoenaon" target='_blank' class='btn btn-default'>View in Chrome Webstore</a></p>
+          </div>
+        </div>
+        <hr>
+        <div class='row'>
+          <div class='col-xs-8 col-sm-5 col-md-4 col-lg-3 text-right'>
+            <h3>Write your own?</h3>
+          </div>
+          <div class='col-xs-12 col-sm-7 col-md-8 col-lg-9 clearfix-xs'>
+            <p>
+              Complice's API is still at the alpha stage, but if you're interested in creating something (and helping me design it) then...
+            </p>
+            <p>
+              <a href="mailto:malcolm@complice.co?subject=API+Access?" target='_blank' class='btn btn-black'>Get Early Access</a>
+            </p>
+          </div>
+        </div>      </div>
+      <div id='password' class='col-md-12 tab-pane'>
+        <form class='form-horizontal' id="settings_password" name='passwordForm' role='form' action="/Fivapr/settings?password" method="post" novalidate ng-submit="passwordForm.$valid && submit()">
+          <h3>Change your password</h3>
+          <div class='form-group' style='position:relative;'>
+            <!-- Password-->
+            <label class='col-md-3 control-label' for='pw1'>New password</label>
+            <div class='col-md-6 controls'>
+              <input type='password' id="pw1" name='pw1' placeholder='password' class='form-control' ng-model="pw1" ng-required="">
+            </div>
+          </div>
+          <div class='form-group' style='position:relative;'>
+            <label class='col-md-3 control-label' for='pw2'>...and again</label>
+            <div class='col-md-6 controls'>
+              <input type='password' id="pw2" name='pw2' placeholder='just to make sure' class='form-control' ng-model="pw2" ng-required="" pw-check="pw1">
+            </div>
+          </div>
+          <div class='form-group' style='position:relative;'>
+            <div class='col-md-6 col-md-offset-3'>
+              <span class='help-block' ng-show="passwordForm.password2.$error.pwmatch">
+                <span class='text-danger'>Hold up! These aren't the same...</span>
+              </span>
+            </div>
+          </div>
+          <div class='form-group' style='position:relative;'>
+            <div class='col-md-6 col-md-offset-3'>
+              <button id="submitSettings" name='submit' type='submit' class='btn btn-info' ng-disabled="passwordForm.password2.$error.pwmatch" >Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class='footer navbar navbar-default navbar-bottom'>
+    <div class='container'>
+      <div class='col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12'>
+        <div class='navbar-header navbar-right'>
+          <a class='navbar-brand' rel="home" href="/?s">
+            <img class='complice-logo' src="https://complicemail-herokuapp-com.global.ssl.fastly.net/img/complice_trans.png">
+          </a>
+        </div>
+          <ul class='nav navbar-nav'>
+            <li class=''><a href="/about">About</a></li>
+            <li class=''><a href="/faq">FAQ</a></li>
+            <li class=''><a href="/features">Features</a></li>
+            <li class=''><a href="/newsletter">Newsletter</a></li>
+            <li><a href="http://blog.complice.co">Blog</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="/Fivapr/data.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/sweetalert.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/tinycolor/1.0.0/tinycolor.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-animate.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-strap/2.0.0/angular-strap.tpl.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/hotkeys.min.js"></script>
+        <script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/moment.min.js"></script>
+        <script src="/js/complicemon.js" type='text/javascript'></script>
+        <script src="https://js.stripe.com/v2/"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/jstz.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/ui-bootstrap-tpls-0.14.3.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/moment-timezone-with-data-2010-2020.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/bootstrap-switch.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/angular-bootstrap-switch.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/lib/card.min.js"></script>
+<script src="https://complicemail-herokuapp-com.global.ssl.fastly.net/js/settings.js"></script>
+
+
+
+        <script> var intercomSettings = {"name":"Fivapr","email":"270696@mail.ru","user_id":"Fivapr","app_id":"uie8xb07"}</script>
+        <script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/uie8xb07';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+
+
+    <div class='checkpath-container-container'>
+      <svg class='checkpath-container' pointer-events='none' xmlns='http://www.w3.org/2000/svg' version='1.1'>
+        <path id="checkpath" class='ccdfl checkpath' d="M 50 0 L 60 10 L 20 50 L 0 30 L 10 20 L 20 30 Z"/>
+      </svg>
+    </div>
+  </body>
+</html>
