@@ -41,3 +41,9 @@ def fivapr_reviews_2016_Jul(request):
 
 def fivapr_reviews_2016_week_30(request):
     return render(request, 'Fivapr_reviews_2016_week_30.html', {})
+
+def fivapr_goals(request):
+    return render(request, 'Fivapr_goals.html', {})
+
+def fivapr_refer(request):
+    return render(request, 'Fivapr_refer.html', {})
