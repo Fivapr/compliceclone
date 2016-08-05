@@ -59,9 +59,24 @@
 
 {% endblock %}
 
+
+
+
+
+
       <hr>
 
       <footer>
+
+
+          {% if not user.is_authenticated %}
+          {% else %}
+              Что такое, {{ user.username }}? Вы же уже авторизорваны. Впрочем, всегда можно <a href="../logout/">выйти</a>.
+              <br/><br/>
+          {% endif %}
+
+
+
         <p>&copy; 2016 Louqauwckaaauh, Inc.</p>
       </footer>
     </div> <!-- /container -->
