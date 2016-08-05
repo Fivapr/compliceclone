@@ -70,8 +70,18 @@
 
 
           {% if not user.is_authenticated %}
+
+              <h3>Login</h3>
+
+              <form action="/login/" method="post" accept-charset="utf-8">
+              {% csrf_token %}
+                  <label for="username">Username</label><input type="text" name="username" value="" id="username" />
+                  <label for="password">Password</label><input type="password" name="password" value="" id="password" />
+                  <p><input type="submit" value="Login →"></p>
+              </form>
+
           {% else %}
-              Что такое, {{ user.username }}? Вы же уже авторизорваны. Впрочем, всегда можно <a href="../logout/">выйти</a>.
+              Что такое, {{ user.username }}? Вы же уже авторизорваны. Впрочем, всегда можно <a href="/logout/">выйти</a>.
               <br/><br/>
           {% endif %}
 
