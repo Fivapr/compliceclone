@@ -4,7 +4,12 @@ from complice.forms import RegistrationForm
 
 def register(request):
 
-    form = RegistrationForm()
+    form = RegistrationForm(request.POST or None)
+
+    if form.is_valid():
+        save_it = form.save(commit=false)
+        save_it.save()
+
     return render(request, 'register.html', {'form': form})
 
 def index(request):
