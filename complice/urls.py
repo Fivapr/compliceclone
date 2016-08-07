@@ -1,8 +1,11 @@
 from django.conf.urls import url
 from . import views
 
+
 urlpatterns = [
-    #url(r'^register/$', views.register, name='register'),
     url(r'^$', views.index, name='index'),
-    #url(r'^register/$', 'views.drinker_reg', name='reg'),
+    url(r'^goals/$', views.goals, name='goals'),
+    url(r'^test/$', views.test_view, name='test'),
 ]
+
+

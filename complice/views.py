@@ -1,25 +1,29 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from complice.forms import RegistrationForm
-
-def register(request):
-
-    form = RegistrationForm(request.POST or None)
-
-    if form.is_valid():
-        save_it = form.save(commit=false)
-        save_it.save()
-
-    return render(request, 'register.html', {'form': form})
+from .forms import Goal_form
+from django.utils import timezone
+from django.shortcuts import redirect
+from .models import Goal
 
 def index(request):
     return render(request, 'index.html', {})
 
-# Create your views here.
-#def drinker_reg(request):
-    #if request.user.is_authenticated():
-    #      return HttpResponseRedirect('/profile/')
-    #if request.method == 'POST':
-    #     pass
-    #else:
-    #     ''' user is not submitting the form, show them a blank registration form '''
+def goals(request):
+    if request.user.is_authenticated:
+        goals = Goal.objects.filter(author=request.user)
+
+        if request.method == 'POST':
+            form = Goal_form(request.POST)
+            if form.is_valid():
+                post = form.save(commit=False)
+                post.author = request.user
+                post.published_date = timezone.now()
+                post.save()
+            return redirect('/goals', )
+        else:
+            form = Goal_form()
+            return render(request, 'goals.html', {'form': form, 'goals': goals})
+    else:
+        return redirect('/login', )
+
+def test_view(request):
+    return render(request, 'test.html', {})

@@ -1,6 +1,5 @@
 from django.contrib import admin
-from complice.models import Drinker
+from .models import Goal
 
 # Register your models here.
-admin.site.register(Drinker)
-
+admin.site.register(Goal)

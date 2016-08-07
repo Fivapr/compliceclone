@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1> Поставить цель </h1>
+<form method="post" action="">
+ {% csrf_token %}
+    {{  form.as_p}}
+<input type="submit" value="Вперёд!">
+</form>
+    <br></br>
+
+<ul>
+{% for goal in goals %}
+    <li>{{ goal.name }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}
